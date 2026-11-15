@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sổ tay ôn tập — Lớp bồi dưỡng nhận thức về Đảng (Gia Lai, 11/2026)</title>
+<style>
+  :root{
+    --ink:#1e1b17; --muted:#5d554a; --red:#7c1d1d; --red2:#9a2c2c;
+    --gold:#a07a33; --paper:#fffdf8; --line:#d8cbbb; --soft:#f5eee3;
+    --green:#1f5741; --orange:#8a4b16;
+  }
+  *{box-sizing:border-box}
+  html{font-size:11.5pt}
+  body{
+    margin:0; background:#e6e0d6; color:var(--ink);
+    font-family:"Times New Roman",Georgia,"Palatino Linotype",serif;
+    line-height:1.55;
+  }
+  .sheet{
+    max-width:210mm; margin:0 auto; background:var(--paper);
+    padding:18mm 16mm 16mm 18mm;
+    box-shadow:0 3px 26px rgba(0,0,0,.14);
+  }
+  p{margin:.35em 0 .6em; text-align:justify}
+  h1,h2,h3,h4{font-family:"Segoe UI",Arial,sans-serif; color:var(--red); line-height:1.25; margin:0}
+  h1{font-size:25pt; letter-spacing:.2px}
+  h2{font-size:15.5pt; margin:0 0 6px; padding-bottom:5px; border-bottom:1.5px solid var(--red)}
+  h3{font-size:12.5pt; margin:14px 0 4px; color:#5f1717}
+  h4{font-size:11pt; margin:10px 0 3px; color:var(--ink); font-family:"Segoe UI",Arial,sans-serif}
+  .kicker{
+    font-family:"Segoe UI",Arial,sans-serif; font-size:8.5pt; letter-spacing:1.6px;
+    text-transform:uppercase; color:var(--gold); font-weight:700
+  }
+  .small{font-size:9.5pt; color:var(--muted)}
+  .tiny{font-size:8.8pt; color:var(--muted)}
+  .center{text-align:center}
+  .nowrap{white-space:nowrap}
+
+  /* Cover */
+  .cover{min-height:250mm; display:flex; flex-direction:column; justify-content:space-between; padding-top:0}
+  .cover .band{height:9mm; background:linear-gradient(90deg,var(--red) 0%,var(--red2) 62%,var(--gold) 100%); margin:0 0 14mm}
+  .cover .seal{
+    width:26mm; height:26mm; border:1.2px solid var(--red); border-radius:50%;
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    font-family:"Segoe UI",Arial,sans-serif; font-size:6.6pt; letter-spacing:1px;
+    color:var(--red); font-weight:700; line-height:1.3; margin-bottom:8mm
+  }
+  .cover h1{font-size:31pt; margin:0 0 4mm}
+  .cover .sub{font-family:"Segoe UI",Arial,sans-serif; font-size:13pt; color:var(--ink); font-weight:600; line-height:1.35}
+  .cover .sub2{font-size:11pt; color:var(--muted); margin-top:3mm}
+  .cover .rule{height:2px; background:var(--red); width:46mm; margin:8mm 0}
+  .meta{width:100%; border-collapse:collapse; margin-top:4mm; font-size:10.5pt}
+  .meta td{padding:3.2px 6px; border-bottom:1px dotted var(--line); vertical-align:top}
+  .meta td:first-child{width:34mm; color:var(--muted); font-family:"Segoe UI",Arial,sans-serif; font-size:9.3pt}
+  .cover .note{
+    border:1px solid var(--line); background:#fbf6ec; padding:8px 11px; font-size:9.3pt;
+    color:#4a4237; line-height:1.45; margin-top:6mm
+  }
+
+  /* Table of contents */
+  .toc{columns:2; column-gap:10mm; font-size:10.5pt; margin-top:4mm}
+  .toc a{color:var(--ink); text-decoration:none; display:block; padding:2.2px 0; border-bottom:1px dotted #e3d8c7}
+  .toc a span{color:var(--red); font-weight:700; margin-right:5px}
+  .toc a:hover{color:var(--red)}
+
+  /* Boxes */
+  .box{border:1px solid var(--line); border-left:4px solid var(--red); background:#fcf8f1; padding:9px 12px; margin:9px 0; break-inside:avoid}
+  .box h4{margin-top:0}
+  .box.gold{border-left-color:var(--gold); background:#fdf9ef}
+  .box.green{border-left-color:var(--green); background:#f4f8f3}
+  .box.gray{border-left-color:#8a8175; background:#f6f4f0}
+  .box.red{border-left-color:var(--red); background:#fbf2f1}
+  .box p:last-child{margin-bottom:0}
+  .label{
+    display:inline-block; font-family:"Segoe UI",Arial,sans-serif; font-size:8pt; font-weight:700;
+    letter-spacing:.7px; text-transform:uppercase; color:#fff; background:var(--red);
+    padding:2px 7px; border-radius:2px; margin-bottom:4px
+  }
+  .label.gold{background:var(--gold)} .label.green{background:var(--green)} .label.gray{background:#7d7466}
+
+  /* Tables */
+  table.t{width:100%; border-collapse:collapse; margin:8px 0 10px; font-size:10pt; break-inside:avoid}
+  table.t th, table.t td{border:1px solid var(--line); padding:5px 7px; vertical-align:top; text-align:left}
+  table.t th{background:var(--soft); font-family:"Segoe UI",Arial,sans-serif; font-size:9.2pt; color:#4a2a1a}
+  table.t tr:nth-child(even) td{background:#fdfaf5}
+  table.t td.c, table.t th.c{text-align:center}
+  table.t .num{font-weight:700; color:var(--red)}
+
+  /* Question blocks */
+  .q{border-top:1px solid #e4d9c8; padding:6px 0 4px; break-inside:avoid}
+  .q .stem{font-weight:600}
+  .q .opts{display:grid; grid-template-columns:1fr 1fr; gap:1px 10px; margin:3px 0 0 0; font-size:10.2pt}
+  .q .opts div{padding:1px 0}
+  .ans{font-size:9.2pt; color:var(--green); margin-top:4px}
+  .ans b{color:var(--green)}
+
+  /* Checklist */
+  .check{list-style:none; padding:0; margin:4px 0}
+  .check li{padding:3px 0 3px 22px; position:relative; border-bottom:1px dotted #e6dccd}
+  .check li:before{
+    content:""; position:absolute; left:0; top:5px; width:11px; height:11px;
+    border:1.2px solid #7d7466; background:#fff
+  }
+
+  /* Part header */
+  .part-head{margin:0 0 10px; padding:10px 0 8px; border-top:3px solid var(--red); border-bottom:1px solid var(--line)}
+  .part-head .no{font-family:"Segoe UI",Arial,sans-serif; font-size:8.5pt; letter-spacing:2px; color:var(--gold); font-weight:700}
+  .part-head h2{border:0; padding:0; margin:2px 0 0; font-size:19pt}
+
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  .three{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px}
+  .kv{font-size:10pt}
+  .kv b{color:var(--red)}
+
+  .quote{border-left:3px solid var(--gold); padding:2px 0 2px 10px; font-style:italic; color:#4a4237; margin:6px 0}
+
+  .printbar{position:fixed; right:14px; bottom:14px; z-index:9}
+  .printbar button{
+    font-family:"Segoe UI",Arial,sans-serif; font-size:10pt; border:0; background:var(--red);
+    color:#fff; padding:8px 13px; border-radius:3px; cursor:pointer; box-shadow:0 2px 10px rgba(0,0,0,.2)
+  }
+  .printbar button:hover{background:var(--red2)}
+
+  /* Web nav */
+  html{scroll-behavior:smooth}
+  .topnav{
+    position:sticky; top:0; z-index:30; display:flex; gap:8px; align-items:center;
+    padding:7px 16px; background:rgba(124,29,29,.97); color:#fff;
+    font-family:"Segoe UI",Arial,sans-serif; font-size:9.3pt;
+    box-shadow:0 1px 8px rgba(0,0,0,.18);
+  }
+  .topnav .brand{font-weight:700; margin-right:auto; letter-spacing:.2px; white-space:nowrap}
+  .topnav a{color:#f6e8d6; text-decoration:none; padding:2px 6px; border-radius:2px; white-space:nowrap}
+  .topnav a:hover{background:rgba(255,255,255,.18); color:#fff}
+  @media screen and (max-width:760px){
+    .topnav{overflow-x:auto; font-size:8.8pt}
+    .topnav .brand{font-size:8.8pt}
+  }
+
+  @media screen and (max-width:760px){
+    .sheet{padding:16px}
+    .toc{columns:1}
+    .two,.three{grid-template-columns:1fr}
+    .q .opts{grid-template-columns:1fr}
+    .cover h1{font-size:24pt}
+  }
+
+  @page{size:A4; margin:16mm 15mm 15mm 17mm}
+  @media print{
+    body{background:#fff}
+    .sheet{max-width:none; margin:0; padding:0; box-shadow:none}
+    .no-print{display:none !important}
+    .part{break-before:page}
+    .cover{min-height:auto; height:auto; page-break-after:always}
+    h1,h2,h3,h4{break-after:avoid}
+    table.t,.box,.q,.check li{break-inside:avoid}
+    a{color:var(--ink); text-decoration:none}
+    .cover .band{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+    .label, table.t th, .cover .band{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<nav class="topnav no-print">
+  <span class="brand">Sổ tay ôn tập Cảm tình Đảng · Gia Lai 11/2026</span>
+  <a href="#a">A</a><a href="#b">B</a><a href="#c1">C1</a><a href="#c2">C2</a><a href="#c3">C3</a><a href="#c4">C4</a><a href="#c5">C5</a><a href="#d">D</a><a href="#e">E</a><a href="#f">F</a><a href="#g">G</a><a href="#h">H</a><a href="#p1">P1</a><a href="#p2">P2</a>
+</nav>
+<div class="printbar no-print"><button onclick="window.print()">In / Lưu PDF</button></div>
+
+<div class="sheet">
+
+<!-- ================= COVER ================= -->
+<section class="cover">
+  <div>
+    <div class="band"></div>
+    <div class="seal">SỔ TAY<br>ÔN TẬP</div>
+    <div class="kicker">Tài liệu tự học cá nhân · Gia Lai, tháng 11/2026</div>
+    <h1>Sổ tay ôn tập<br>Lớp bồi dưỡng nhận thức về Đảng</h1>
+    <div class="sub">Giáo trình 7 ngày — 5 chuyên đề trọng tâm, 40 câu trắc nghiệm,<br>đề cương và bài thu hoạch mẫu, phần liên hệ tỉnh Gia Lai</div>
+    <div class="rule"></div>
+    <div class="sub2">Biên soạn theo Hướng dẫn 61-HD/BTGTW ngày 16/6/2022 và<br><i>Tài liệu bồi dưỡng nhận thức về Đảng</i> (xuất bản lần thứ 24, cập nhật Văn kiện Đại hội XIV)</div>
+  </div>
+
+  <div>
+    <table class="meta">
+      <tr><td>Học viên</td><td>Nguyễn Tuấn Minh — giáo viên Hóa học</td></tr>
+      <tr><td>Đơn vị</td><td>Trường THPT Chi Lăng, tỉnh Gia Lai</td></tr>
+      <tr><td>Lớp dự kiến</td><td>Bồi dưỡng nhận thức về Đảng — tuần 16–22/11/2026</td></tr>
+      <tr><td>Tài liệu chuẩn</td><td><i>Tài liệu bồi dưỡng nhận thức về Đảng</i>, XB lần thứ 24 (2026); tài liệu và hướng dẫn của lớp</td></tr>
+      <tr><td>Cập nhật số liệu</td><td>Đến ngày 15/11/2026</td></tr>
+    </table>
+    <div class="note">
+      <b>Cách dùng:</b> đây là sổ tay tự biên soạn để học trước và ôn nhanh, không thay thế tài liệu chính thức của lớp.
+      Nội dung Trung ương và số liệu tỉnh Gia Lai đã được đối chiếu với văn bản, bài phát biểu và số liệu công bố tại thời điểm ghi trên.
+      Chỗ nào còn đang lấy ý kiến hoặc có nhiều cách tính, tài liệu ghi rõ để tránh suy đoán.
+      Khi có khác biệt, <b>lấy tài liệu của lớp và hướng dẫn của giảng viên làm chuẩn</b>.
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW TO USE / TOC ================= -->
+<section class="part">
+  <div class="part-head">
+    <div class="no">MỞ ĐẦU</div>
+    <h2>Ba nguyên tắc học nhanh, nhớ lâu</h2>
+  </div>
+
+  <div class="three">
+    <div class="box red">
+      <div class="label">1. Học theo khung</div>
+      <p>Mỗi bài đi qua ba lớp: <b>mốc — logic — liên hệ</b>. Trước hết nhớ mốc và con số; sau đó hiểu vì sao sự kiện diễn ra như vậy; cuối cùng trả lời: việc này liên quan gì đến mình và đến Gia Lai.</p>
+    </div>
+    <div class="box gold">
+      <div class="label gold">2. Tự kiểm tra</div>
+      <p>Đọc lại không bằng tự viết lại. Sau mỗi bài, gấp tài liệu, viết 5 dòng tóm tắt và làm 5 câu trắc nghiệm. Sai câu nào thì quay lại đúng đoạn đó, không đọc tràn lan.</p>
+    </div>
+    <div class="box green">
+      <div class="label green">3. Liên hệ thật</div>
+      <p>Bài thu hoạch chỉ có giá trị khi có việc làm và địa chỉ cụ thể. Mỗi nhận thức phải kéo theo một hành động: việc gì, ở đâu, khi nào, kết quả đo được bằng gì.</p>
+    </div>
+  </div>
+
+  <h3>Mục lục</h3>
+  <nav class="toc">
+    <a href="#a"><span>A</span>Bản đồ khóa học và khung thời lượng</a>
+    <a href="#b"><span>B</span>Kế hoạch 7 ngày và phương pháp ghi chép</a>
+    <a href="#c1"><span>C1</span>Khái quát lịch sử Đảng Cộng sản Việt Nam</a>
+    <a href="#c2"><span>C2</span>Cương lĩnh xây dựng đất nước</a>
+    <a href="#c3"><span>C3</span>Nội dung cơ bản của Điều lệ Đảng</a>
+    <a href="#c4"><span>C4</span>Học tập, làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh</a>
+    <a href="#c5"><span>C5</span>Phấn đấu trở thành đảng viên</a>
+    <a href="#d"><span>D</span>Gia Lai — học và làm theo Bác từ địa phương</a>
+    <a href="#e"><span>E</span>40 câu trắc nghiệm tổng hợp và đáp án</a>
+    <a href="#f"><span>F</span>Đề cương và bài thu hoạch mẫu</a>
+    <a href="#g"><span>G</span>Dự đoán đề tổng kết khóa — làm dần 7 ngày</a>
+    <a href="#h"><span>H</span>Checklist trước — trong — sau lớp</a>
+    <a href="#p1"><span>P1</span>30 dữ kiện không được quên</a>
+    <a href="#p2"><span>P2</span>Văn bản gốc và nguồn kiểm chứng</a>
+  </nav>
+</section>
+
+<!-- ================= PART A ================= -->
+<section class="part" id="a">
+  <div class="part-head">
+    <div class="no">PHẦN A</div>
+    <h2>Bản đồ khóa học và khung thời lượng</h2>
+  </div>
+
+  <p>Chương trình “Bồi dưỡng nhận thức về Đảng” theo Hướng dẫn 61-HD/BTGTW ngày 16/6/2022 gồm <b>05 bài lý luận chính trị</b>, khung 30 tiết giảng, 10 tiết thảo luận, 5 tiết báo cáo chuyên đề hoặc tham quan thực tế và 5 tiết viết bài thu hoạch; thường tổ chức trong 5 ngày. Tùy điều kiện, trung tâm chính trị hoặc ban tuyên giáo địa phương có thể bố trí linh hoạt, nhưng nội dung 5 bài là khung chuẩn.</p>
+
+  <table class="t">
+    <thead>
+      <tr><th style="width:9mm" class="c">Bài</th><th>Tên bài</th><th>Trọng tâm cần nắm</th><th style="width:19mm" class="c">Khung</th><th style="width:17mm" class="c">Ưu tiên</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="c num">1</td><td><b>Khái quát lịch sử Đảng Cộng sản Việt Nam</b></td><td>Bối cảnh ra đời; các mốc son; 5 bài học kinh nghiệm; truyền thống vẻ vang</td><td class="c">6 tiết</td><td class="c">★★★</td></tr>
+      <tr><td class="c num">2</td><td><b>Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội</b></td><td>8 đặc trưng; 8 phương hướng; 8 quan hệ lớn; mục tiêu 2030–2045; 3 đột phá chiến lược</td><td class="c">6 tiết</td><td class="c">★★★</td></tr>
+      <tr><td class="c num">3</td><td><b>Nội dung cơ bản của Điều lệ Đảng Cộng sản Việt Nam</b></td><td>Điều kiện vào Đảng; 5 nhiệm vụ, 4 quyền; nguyên tắc tập trung dân chủ; quy trình kết nạp; kỷ luật</td><td class="c">6 tiết</td><td class="c">★★★</td></tr>
+      <tr><td class="c num">4</td><td><b>Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh</b></td><td>Định nghĩa tư tưởng Hồ Chí Minh; 4 chuẩn mực đạo đức; phong cách; Chỉ thị 07-CT/TW (13/7/2026)</td><td class="c">6 tiết</td><td class="c">★★</td></tr>
+      <tr><td class="c num">5</td><td><b>Phấn đấu trở thành đảng viên Đảng Cộng sản Việt Nam</b></td><td>Động cơ đúng đắn; tiêu chuẩn; quy trình 5 bước; thời gian dự bị; bài thu hoạch</td><td class="c">6 tiết</td><td class="c">★★★</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box gray">
+    <div class="label gray">Bốn kiểu câu hỏi thường gặp</div>
+    <table class="t" style="margin:4px 0 0">
+      <tr><td style="width:36mm"><b>Mốc thời gian</b></td><td>Ngày thành lập Đảng, ngày giải phóng miền Nam, ngày ban hành văn bản mới. Cách học: vẽ một trục thời gian duy nhất, dán lên tường.</td></tr>
+      <tr><td><b>Con số</b></td><td>8 đặc trưng, 8 phương hướng, 5 nhiệm vụ, 4 quyền, 12 tháng dự bị, 200 ủy viên Ban Chấp hành Trung ương khóa XIV. Cách học: nhóm theo “bộ số”.</td></tr>
+      <tr><td><b>Khái niệm</b></td><td>Tư tưởng Hồ Chí Minh, nguyên tắc tập trung dân chủ, Nhà nước pháp quyền xã hội chủ nghĩa. Cách học: nói lại bằng lời của mình, không đọc nguyên văn.</td></tr>
+      <tr><td><b>Liên hệ</b></td><td>“Đồng chí sẽ làm gì?”. Cách học: chuẩn bị trước 3 việc làm cụ thể, có địa chỉ và thời hạn.</td></tr>
+    </table>
+  </div>
+
+  <div class="box red">
+    <div class="label">Cảnh báo về nguồn</div>
+    <p>Từ sau Đại hội XIV (tháng 1/2026), nhiều văn bản của Trung ương đã được ban hành mới: Quy định 20-QĐ/TW ngày 8/4/2026 về thi hành Điều lệ Đảng; Hướng dẫn 01-HD/TW ngày 19/5/2026; Quy định 207-QĐ/TW ngày 26/7/2026 về 19 điều đảng viên không được làm; Chỉ thị 07-CT/TW ngày 13/7/2026 về học tập, thực hành tư tưởng, đạo đức, phương pháp, phong cách Hồ Chí Minh. Trên mạng có nhiều tài liệu cũ trước 2026; khi ôn, ưu tiên văn bản có số hiệu và ngày ban hành rõ ràng.</p>
+  </div>
+</section>
+
+<!-- ================= PART B ================= -->
+<section class="part" id="b">
+  <div class="part-head">
+    <div class="no">PHẦN B</div>
+    <h2>Kế hoạch 7 ngày và phương pháp ghi chép</h2>
+  </div>
+
+  <p>Lịch dưới đây thiết kế cho tuần 16–22/11/2026, mỗi ngày 60–90 phút. Nếu lớp khai giảng muộn hơn hoặc học tập trung 3 ngày, giữ nguyên thứ tự bài và dồn các buổi tối lại; không đảo bài 3 lên trước bài 1 vì bài 3 dùng nhiều khái niệm đã hình thành từ bài 1–2.</p>
+
+  <table class="t">
+    <thead><tr><th style="width:27mm">Ngày</th><th>Việc chính</th><th style="width:16mm" class="c">Thời gian</th><th style="width:40mm">Sản phẩm để lại</th></tr></thead>
+    <tbody>
+      <tr><td><b>CN 15/11</b><br><span class="tiny">D-1</span></td><td>Đọc Phần A, Bài 1, Bài 2; làm 10 câu đầu; chuẩn bị sổ, bút, giấy tờ</td><td class="c">90 phút</td><td>01 trang tóm tắt tay; danh sách việc cần hỏi</td></tr>
+      <tr><td><b>T2 16/11</b></td><td>Nếu lớp khai giảng: ghi chú Bài 1–2 theo 3 cột; tối ôn 20 phút</td><td class="c">60 phút</td><td>Trục thời gian 1930–2026</td></tr>
+      <tr><td><b>T3 17/11</b></td><td>Bài 3: Điều lệ Đảng; học thuộc bộ số 5–4–12–18; so sánh nhiệm vụ và quyền</td><td class="c">75 phút</td><td>Bảng so sánh 5 nhiệm vụ / 4 quyền</td></tr>
+      <tr><td><b>T4 18/11</b></td><td>Bài 4: tư tưởng, đạo đức, phong cách Hồ Chí Minh; đọc kỹ 5 nhóm nhiệm vụ của Chỉ thị 07</td><td class="c">60 phút</td><td>05 việc “làm theo Bác” của bản thân</td></tr>
+      <tr><td><b>T5 19/11</b></td><td>Bài 5: động cơ, tiêu chuẩn, quy trình; viết nháp bài thu hoạch</td><td class="c">90 phút</td><td>Bản nháp 2 trang</td></tr>
+      <tr><td><b>T6 20/11</b></td><td>Tổng ôn 40 câu; sửa bài thu hoạch theo góp ý của chính mình</td><td class="c">90 phút</td><td>40/40 câu + bản sửa lần 2</td></tr>
+      <tr><td><b>T7 21/11</b></td><td>Kiểm tra thử 45 phút; đọc Phần D (Gia Lai); in tài liệu</td><td class="c">75 phút</td><td>Bài kiểm tra thử đã chấm</td></tr>
+      <tr><td><b>CN 22/11</b></td><td>Nghỉ nhẹ; đọc “30 dữ kiện”; kiểm tra giấy tờ, trang phục</td><td class="c">30 phút</td><td>Sẵn sàng vào lớp</td></tr>
+    </tbody>
+  </table>
+
+  <div class="two">
+    <div class="box gold">
+      <div class="label gold">Phương pháp 3 vòng</div>
+      <p><b>Trước:</b> đọc mục lục bài, đặt 3 câu hỏi mình muốn biết. <b>Trong:</b> ghi chú Cornell — cột trái là ý chính, cột phải là chi tiết và ví dụ, cuối trang là câu hỏi/liên hệ. <b>Sau:</b> gấp tài liệu, viết lại 5 dòng; đánh dấu chỗ không nhớ để hỏi giảng viên.</p>
+    </div>
+    <div class="box green">
+      <div class="label green">Quy tắc 1–3–7</div>
+      <p>Ôn lại bài vào <b>ngày hôm sau</b>, sau <b>3 ngày</b> và sau <b>7 ngày</b>. Mỗi lần chỉ 10–15 phút, chỉ đọc phần đánh dấu và tự hỏi. Cách này hiệu quả hơn đọc lại toàn bộ nhiều lần.</p>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="label">Cách ghi chép trong lớp</div>
+    <table class="t" style="margin:4px 0 0">
+      <tr><th style="width:40mm">Cột trái — Ý</th><th>Cột phải — Chi tiết</th></tr>
+      <tr><td>Mốc / khái niệm / con số</td><td>Ngày tháng, tên văn bản, giải thích của giảng viên, ví dụ địa phương</td></tr>
+      <tr><td>Câu hỏi của mình</td><td>Đánh dấu “?” để hỏi ngay hoặc hỏi sau giờ học</td></tr>
+      <tr><td>Liên hệ bản thân</td><td>Một việc làm cụ thể có thể đưa vào bài thu hoạch</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ================= C1 ================= -->
+<section class="part" id="c1">
+  <div class="part-head">
+    <div class="no">PHẦN C · CHUYÊN ĐỀ 1</div>
+    <h2>Khái quát lịch sử Đảng Cộng sản Việt Nam</h2>
+  </div>
+
+  <div class="box gray">
+    <div class="label gray">Cần nắm được gì</div>
+    <p>Bối cảnh dẫn tới sự ra đời của Đảng; ngày thành lập và ý nghĩa của Hội nghị hợp nhất; trục thời gian 1930–2026 với các mốc không được nhầm; hệ thống 14 kỳ đại hội; những bài học kinh nghiệm và truyền thống của Đảng. Cách học hiệu quả nhất với bài này là <b>vẽ một trục thời gian duy nhất</b> rồi điền dần, thay vì học thuộc từng đoạn.</p>
+  </div>
+
+  <h3>1. Vì sao phải học lịch sử Đảng</h3>
+  <p>Học lịch sử Đảng không phải để nhớ ngày tháng cho đủ bài, mà để trả lời ba câu hỏi có ích cho chính mình: Đảng ra đời vì giải quyết vấn đề gì? Đảng đã giải quyết vấn đề đó bằng cách nào? Những cách làm đó để lại bài học gì cho công việc hôm nay — từ một tiết dạy trên lớp đến một quyết định của tổ chuyên môn?</p>
+  <p>Với người giáo viên, lịch sử Đảng còn là <b>chất liệu dạy học</b>: cùng một sự kiện, nếu nắm được bối cảnh và logic, có thể dùng làm ví dụ liên môn, làm chủ đề giáo dục địa phương, hoặc đơn giản là trả lời chính xác câu hỏi của học sinh mà không phải “chờ thầy tra Google”.</p>
+
+  <h3>2. Bối cảnh ra đời của Đảng</h3>
+  <p><b>Về phía dân tộc:</b> thực dân Pháp nổ súng xâm lược Việt Nam năm 1858. Từ đó đến đầu thế kỷ XX, hàng loạt phong trào yêu nước nổ ra — phong trào Cần Vương, khởi nghĩa Yên Thế, phong trào Đông Du, Duy Tân, Đông Kinh Nghĩa Thục, các cuộc vận động của Phan Bội Châu, Phan Châu Trinh — nhưng đều thất bại hoặc bị đàn áp. Nguyên nhân sâu xa: thiếu một đường lối cách mạng đúng đắn, thiếu một tổ chức lãnh đạo có khả năng tập hợp lực lượng toàn dân.</p>
+  <p><b>Về phía thế giới:</b> Cách mạng Tháng Mười Nga (1917) thắng lợi; Quốc tế Cộng sản (Quốc tế III) thành lập năm 1919; phong trào giải phóng dân tộc ở các nước thuộc địa dâng cao. Những sự kiện này mở ra một con đường mới cho cách mạng Việt Nam.</p>
+  <p><b>Vai trò của Nguyễn Ái Quốc:</b> ngày 5/6/1911, Nguyễn Tất Thành rời bến Nhà Rồng ra đi tìm đường cứu nước. Tháng 7/1920, Người đọc <i>Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa</i> của V.I. Lênin và tìm thấy con đường giải phóng cho dân tộc mình. Tháng 12/1920, Người tán thành Quốc tế III và tham gia sáng lập Đảng Cộng sản Pháp — trở thành người cộng sản Việt Nam đầu tiên. Năm 1925, Người thành lập Hội Việt Nam Cách mạng Thanh niên, tổ chức huấn luyện cán bộ và truyền bá chủ nghĩa Mác - Lênin vào Việt Nam.</p>
+  <p><b>Sự phân hóa của các tổ chức cộng sản:</b> năm 1929, ba tổ chức cộng sản lần lượt ra đời — Đông Dương Cộng sản Đảng (tháng 6/1929), An Nam Cộng sản Đảng (tháng 8/1929) và Đông Dương Cộng sản Liên đoàn (tháng 9/1929). Ba tổ chức cùng mục tiêu nhưng hoạt động riêng rẽ, tranh giành ảnh hưởng, gây nguy cơ chia rẽ. Yêu cầu bức thiết lúc này là <b>thống nhất thành một đảng duy nhất</b>.</p>
+
+  <h3>3. Hội nghị thành lập Đảng — 3/2/1930</h3>
+  <p>Với tư cách phái viên của Quốc tế Cộng sản, Nguyễn Ái Quốc triệu tập và chủ trì Hội nghị hợp nhất các tổ chức cộng sản tại Cửu Long (Hương Cảng, Trung Quốc), từ ngày 6/1/1930. Hội nghị nhất trí thành lập <b>Đảng Cộng sản Việt Nam</b>, thông qua Chính cương vắn tắt, Sách lược vắn tắt, Điều lệ vắn tắt và Chương trình hành động — về sau gọi chung là <b>Cương lĩnh chính trị đầu tiên của Đảng</b>. Ngày 24/2/1930, Đông Dương Cộng sản Liên đoàn gia nhập Đảng Cộng sản Việt Nam; việc hợp nhất hoàn tất.</p>
+  <div class="box red">
+    <div class="label">Ba ý phải nhớ</div>
+    <p><b>Ngày:</b> 3/2/1930 — ngày thành lập Đảng, sau này là ngày kỷ niệm thành lập Đảng hằng năm.<br>
+    <b>Địa điểm:</b> Cửu Long, Hương Cảng (nay thuộc Hồng Kông, Trung Quốc).<br>
+    <b>Người chủ trì:</b> Nguyễn Ái Quốc — người sáng lập và là người đặt nền móng tư tưởng cho Đảng.</p>
+  </div>
+  <p><b>Ý nghĩa:</b> Đảng ra đời chấm dứt thời kỳ khủng hoảng về đường lối và tổ chức lãnh đạo của cách mạng Việt Nam; đưa cách mạng nước ta bước vào thời kỳ mới — đấu tranh có tổ chức, có đường lối, có mục tiêu rõ ràng. Đây là bước ngoặt lịch sử, là kết quả của sự kết hợp giữa chủ nghĩa Mác - Lênin với phong trào công nhân và phong trào yêu nước Việt Nam.</p>
+
+  <h3>4. Trục thời gian 1930 – 2026</h3>
+  <table class="t">
+    <thead><tr><th style="width:26mm">Mốc</th><th>Sự kiện và ý nghĩa cốt lõi</th></tr></thead>
+    <tbody>
+      <tr><td class="nowrap"><b>3/2/1930</b></td><td>Thành lập Đảng Cộng sản Việt Nam; Cương lĩnh chính trị đầu tiên.</td></tr>
+      <tr><td><b>1930–1931</b></td><td>Cao trào cách mạng, đỉnh cao là Xô viết Nghệ Tĩnh; lần đầu nhân dân lao động giành chính quyền ở cơ sở.</td></tr>
+      <tr><td><b>3/1935</b></td><td>Đại hội đại biểu toàn quốc lần thứ I tại Ma Cao (Trung Quốc) — khôi phục hệ thống tổ chức Đảng sau thời kỳ khủng bố trắng.</td></tr>
+      <tr><td><b>1936–1939</b></td><td>Thời kỳ vận động dân chủ, Mặt trận Dân chủ Đông Dương; tích lũy kinh nghiệm đấu tranh hợp pháp, nửa hợp pháp.</td></tr>
+      <tr><td><b>5/1941</b></td><td>Hội nghị Trung ương 8 tại Pác Bó (Cao Bằng) do Nguyễn Ái Quốc chủ trì: đặt nhiệm vụ giải phóng dân tộc lên hàng đầu; thành lập Mặt trận Việt Minh (19/5/1941).</td></tr>
+      <tr><td><b>22/12/1944</b></td><td>Thành lập Đội Việt Nam Tuyên truyền Giải phóng quân — tiền thân của Quân đội nhân dân Việt Nam.</td></tr>
+      <tr><td><b>8/1945</b></td><td>Cách mạng Tháng Tám thắng lợi, chính quyền về tay nhân dân.</td></tr>
+      <tr><td><b>2/9/1945</b></td><td>Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa.</td></tr>
+      <tr><td><b>1945–1954</b></td><td>Kháng chiến chống thực dân Pháp; Chiến thắng Điện Biên Phủ 7/5/1954; Hiệp định Giơnevơ 21/7/1954.</td></tr>
+      <tr><td><b>1954–1975</b></td><td>Kháng chiến chống Mỹ, cứu nước; Đại hội III (9/1960) xác định nhiệm vụ cách mạng hai miền; Hiệp định Pari 27/1/1973; Đại thắng mùa Xuân 1975.</td></tr>
+      <tr><td><b>30/4/1975</b></td><td>Giải phóng miền Nam, thống nhất đất nước.</td></tr>
+      <tr><td><b>12/1986</b></td><td>Đại hội VI khởi xướng đường lối đổi mới — mốc mở đầu thời kỳ đổi mới toàn diện.</td></tr>
+      <tr><td><b>6/1991</b></td><td>Đại hội VII thông qua Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội.</td></tr>
+      <tr><td><b>1/2011</b></td><td>Đại hội XI thông qua Cương lĩnh (bổ sung, phát triển năm 2011) — văn bản đang áp dụng.</td></tr>
+      <tr><td><b>1/2026</b></td><td>Đại hội XIV: 200 ủy viên Ban Chấp hành Trung ương (180 chính thức, 20 dự khuyết); xác định mục tiêu tăng trưởng GDP từ 10%/năm trở lên giai đoạn 2026–2030.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>5. Mười bốn kỳ đại hội</h3>
+  <table class="t">
+    <thead><tr><th style="width:16mm" class="c">Đại hội</th><th style="width:30mm">Thời gian</th><th>Dấu ấn chính</th></tr></thead>
+    <tbody>
+      <tr><td class="c num">I</td><td>27–31/3/1935</td><td>Ma Cao (Trung Quốc); khôi phục tổ chức, đề ra 3 nhiệm vụ trước mắt.</td></tr>
+      <tr><td class="c num">II</td><td>11–19/2/1951</td><td>Tuyên Quang; đổi tên thành Đảng Lao động Việt Nam; ra hoạt động công khai.</td></tr>
+      <tr><td class="c num">III</td><td>5–10/9/1960</td><td>Hà Nội; xác định hai nhiệm vụ chiến lược của cách mạng hai miền.</td></tr>
+      <tr><td class="c num">IV</td><td>14–20/12/1976</td><td>Đổi tên thành Đảng Cộng sản Việt Nam; tổng kết 30 năm, đề ra đường lối xây dựng đất nước.</td></tr>
+      <tr><td class="c num">V</td><td>27–31/3/1982</td><td>Nhìn thẳng vào sự thật, chỉ ra khó khăn của nền kinh tế.</td></tr>
+      <tr><td class="c num">VI</td><td>15–18/12/1986</td><td>Khởi xướng đường lối đổi mới; phát triển kinh tế nhiều thành phần.</td></tr>
+      <tr><td class="c num">VII</td><td>24–27/6/1991</td><td>Thông qua Cương lĩnh 1991; khẳng định con đường đi lên chủ nghĩa xã hội.</td></tr>
+      <tr><td class="c num">VIII</td><td>28/6–1/7/1996</td><td>Đẩy mạnh công nghiệp hóa, hiện đại hóa.</td></tr>
+      <tr><td class="c num">IX</td><td>19–22/4/2001</td><td>Khẳng định, làm rõ tư tưởng Hồ Chí Minh; xác định mục tiêu đến 2020.</td></tr>
+      <tr><td class="c num">X</td><td>18–25/4/2006</td><td>Đẩy mạnh toàn diện công cuộc đổi mới; sớm đưa nước ta ra khỏi tình trạng kém phát triển.</td></tr>
+      <tr><td class="c num">XI</td><td>12–19/1/2011</td><td>Bổ sung, phát triển Cương lĩnh 1991; Chiến lược phát triển kinh tế - xã hội 2011–2020.</td></tr>
+      <tr><td class="c num">XII</td><td>20–28/1/2016</td><td>Đẩy mạnh công nghiệp hóa, hiện đại hóa; chú trọng xây dựng, chỉnh đốn Đảng.</td></tr>
+      <tr><td class="c num">XIII</td><td>25/1–1/2/2021</td><td>Khát vọng phát triển đất nước đến 2030, tầm nhìn 2045; đẩy mạnh đấu tranh phòng, chống tham nhũng.</td></tr>
+      <tr><td class="c num">XIV</td><td>19–23/1/2026</td><td>Mục tiêu tăng trưởng hai con số; hoàn thiện thể chế, đột phá về khoa học công nghệ và chuyển đổi số.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>6. Bài học kinh nghiệm và truyền thống</h3>
+  <p>Năm bài học lớn được nêu tại Đại hội XIII và tiếp tục được kế thừa trong các văn kiện tiếp theo, tóm lược như sau:</p>
+  <ol>
+    <li><b>Kiên định và vận dụng sáng tạo</b> chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh — nền tảng tư tưởng của Đảng.</li>
+    <li><b>Thường xuyên xây dựng, chỉnh đốn Đảng</b>, nâng cao năng lực lãnh đạo, năng lực cầm quyền và sức chiến đấu của Đảng.</li>
+    <li><b>Phát huy sức mạnh đại đoàn kết toàn dân tộc</b>, dựa vào nhân dân để xây dựng và bảo vệ Tổ quốc.</li>
+    <li><b>Chủ động, tích cực hội nhập quốc tế</b>, kết hợp sức mạnh dân tộc với sức mạnh thời đại.</li>
+    <li><b>Nhạy bén, sáng tạo, kịp thời</b> nắm bắt thời cơ, vượt qua thách thức, đưa đất nước phát triển bền vững.</li>
+  </ol>
+  <div class="box gold">
+    <div class="label gold">Bốn truyền thống thường được nêu</div>
+    <p>Đấu tranh anh dũng, bất khuất, hy sinh vì độc lập tự do của Tổ quốc và hạnh phúc của nhân dân; đoàn kết, thống nhất, kỷ luật nghiêm minh; gắn bó máu thịt với nhân dân; quốc tế trong sáng, thủy chung với bạn bè năm châu. Khi viết bài thu hoạch, nên chọn <b>một</b> truyền thống gắn với nghề giáo để phân tích sâu, thay vì liệt kê cả bốn.</p>
+  </div>
+
+  <h3>7. Câu hỏi ôn tập chuyên đề 1</h3>
+  <ol class="kv">
+    <li>Trình bày bối cảnh lịch sử dẫn tới sự ra đời của Đảng Cộng sản Việt Nam. Vì sao nói sự ra đời của Đảng là bước ngoặt của cách mạng Việt Nam?</li>
+    <li>Nêu thời gian, địa điểm, người chủ trì Hội nghị thành lập Đảng và nội dung cơ bản của Cương lĩnh chính trị đầu tiên.</li>
+    <li>Kể tên các kỳ đại hội đại biểu toàn quốc và dấu ấn chính của mỗi kỳ. Kỳ đại hội nào gắn với đổi mới?</li>
+    <li>Phân tích ý nghĩa của Chiến thắng Điện Biên Phủ (1954) và Đại thắng mùa Xuân 1975 trong tiến trình lịch sử Đảng.</li>
+    <li>Chọn một bài học kinh nghiệm và trình bày cách vận dụng bài học đó vào công tác giảng dạy của đồng chí.</li>
+  </ol>
+</section>
+
+<!-- ================= C2 ================= -->
+<section class="part" id="c2">
+  <div class="part-head">
+    <div class="no">PHẦN C · CHUYÊN ĐỀ 2</div>
+    <h2>Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội</h2>
+  </div>
+
+  <div class="box gray">
+    <div class="label gray">Cần nắm được gì</div>
+    <p>Vì sao có Cương lĩnh; <b>8 đặc trưng</b> của xã hội xã hội chủ nghĩa; <b>8 phương hướng</b> cơ bản; <b>8 quan hệ lớn</b> cần giải quyết; mục tiêu đến 2030 và tầm nhìn 2045; ba đột phá chiến lược. Đây là bài “nhiều bộ số” nhất trong 5 bài — hãy nhóm số theo cặp 8–8–8 trước, rồi mới học chi tiết.</p>
+  </div>
+
+  <h3>1. Cương lĩnh là gì và có từ khi nào</h3>
+  <p>Cương lĩnh là văn bản nêu những vấn đề cơ bản, có tính nguyên tắc và lâu dài về mục tiêu, con đường, động lực phát triển của đất nước. Cương lĩnh chính trị đầu tiên của Đảng là Chính cương vắn tắt, Sách lược vắn tắt do Nguyễn Ái Quốc soạn thảo, thông qua tại Hội nghị thành lập Đảng (3/2/1930).</p>
+  <p><b>Cương lĩnh 1991</b> được thông qua tại Đại hội VII (6/1991) — văn bản đầu tiên sau đổi mới xác định rõ mô hình và con đường đi lên chủ nghĩa xã hội ở nước ta. <b>Cương lĩnh (bổ sung, phát triển năm 2011)</b> được thông qua tại Đại hội XI, là văn bản đang áp dụng. Đây là tài liệu gốc cho bài 2; các con số 8–8–8 dưới đây đều lấy từ Cương lĩnh 2011.</p>
+
+  <h3>2. Tám đặc trưng của xã hội xã hội chủ nghĩa mà nhân dân ta xây dựng</h3>
+  <table class="t">
+    <thead><tr><th style="width:9mm" class="c">#</th><th>Đặc trưng</th><th style="width:46mm">Cách nhớ</th></tr></thead>
+    <tbody>
+      <tr><td class="c num">1</td><td>Dân giàu, nước mạnh, dân chủ, công bằng, văn minh</td><td>Mục tiêu tổng quát</td></tr>
+      <tr><td class="c num">2</td><td>Do nhân dân làm chủ</td><td>Chủ thể</td></tr>
+      <tr><td class="c num">3</td><td>Có nền kinh tế phát triển cao dựa trên lực lượng sản xuất hiện đại và quan hệ sản xuất tiến bộ phù hợp</td><td>Kinh tế</td></tr>
+      <tr><td class="c num">4</td><td>Có nền văn hóa tiên tiến, đậm đà bản sắc dân tộc</td><td>Văn hóa</td></tr>
+      <tr><td class="c num">5</td><td>Con người có cuộc sống ấm no, tự do, hạnh phúc, có điều kiện phát triển toàn diện</td><td>Con người</td></tr>
+      <tr><td class="c num">6</td><td>Các dân tộc trong nước bình đẳng, đoàn kết, tôn trọng và giúp nhau cùng phát triển</td><td>Dân tộc</td></tr>
+      <tr><td class="c num">7</td><td>Có Nhà nước pháp quyền xã hội chủ nghĩa của nhân dân, do nhân dân, vì nhân dân do Đảng lãnh đạo</td><td>Nhà nước</td></tr>
+      <tr><td class="c num">8</td><td>Có quan hệ hữu nghị và hợp tác với các nước trên thế giới</td><td>Đối ngoại</td></tr>
+    </tbody>
+  </table>
+  <div class="box gold">
+    <div class="label gold">Mẹo nhớ 8 đặc trưng</div>
+    <p>Đọc thành một câu: <b>“Mục tiêu — Chủ thể — Kinh tế — Văn hóa — Con người — Dân tộc — Nhà nước — Đối ngoại”</b>. Tám từ khóa này đi theo đúng thứ tự trong Cương lĩnh, chỉ cần nhớ tám từ là dựng lại được nội dung.</p>
+  </div>
+
+  <h3>3. Tám phương hướng cơ bản</h3>
+  <ol>
+    <li>Đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước gắn với phát triển kinh tế tri thức, bảo vệ tài nguyên, môi trường.</li>
+    <li>Phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa.</li>
+    <li>Xây dựng nền văn hóa tiên tiến, đậm đà bản sắc dân tộc; xây dựng con người, nâng cao đời sống nhân dân, thực hiện tiến bộ và công bằng xã hội.</li>
+    <li>Bảo đảm vững chắc quốc phòng và an ninh quốc gia, trật tự, an toàn xã hội.</li>
+    <li>Thực hiện đường lối đối ngoại độc lập, tự chủ, hòa bình, hữu nghị, hợp tác và phát triển; chủ động và tích cực hội nhập quốc tế.</li>
+    <li>Xây dựng nền dân chủ xã hội chủ nghĩa, thực hiện đại đoàn kết toàn dân tộc, tăng cường và mở rộng Mặt trận dân tộc thống nhất.</li>
+    <li>Xây dựng Nhà nước pháp quyền xã hội chủ nghĩa của nhân dân, do nhân dân, vì nhân dân.</li>
+    <li>Xây dựng Đảng trong sạch, vững mạnh.</li>
+  </ol>
+
+  <h3>4. Tám quan hệ lớn cần nắm vững và giải quyết</h3>
+  <p>Cương lĩnh 2011 nêu tám mối quan hệ lớn, được coi là “bộ điều chỉnh” tư duy khi hoạch định chính sách. Cách học: nhớ theo cặp đối lập.</p>
+  <table class="t">
+    <thead><tr><th style="width:9mm" class="c">#</th><th>Quan hệ</th></tr></thead>
+    <tbody>
+      <tr><td class="c num">1</td><td>Giữa đổi mới, ổn định và phát triển</td></tr>
+      <tr><td class="c num">2</td><td>Giữa kinh tế thị trường và định hướng xã hội chủ nghĩa</td></tr>
+      <tr><td class="c num">3</td><td>Giữa phát triển lực lượng sản xuất và xây dựng, hoàn thiện quan hệ sản xuất</td></tr>
+      <tr><td class="c num">4</td><td>Giữa tăng trưởng kinh tế và phát triển văn hóa, thực hiện tiến bộ, công bằng xã hội</td></tr>
+      <tr><td class="c num">5</td><td>Giữa xây dựng chủ nghĩa xã hội và bảo vệ Tổ quốc xã hội chủ nghĩa</td></tr>
+      <tr><td class="c num">6</td><td>Giữa độc lập, tự chủ và hội nhập quốc tế</td></tr>
+      <tr><td class="c num">7</td><td>Giữa Đảng lãnh đạo, Nhà nước quản lý, nhân dân làm chủ</td></tr>
+      <tr><td class="c num">8</td><td>Giữa thực hành dân chủ và tăng cường pháp chế, bảo đảm kỷ cương xã hội</td></tr>
+    </tbody>
+  </table>
+
+  <h3>5. Mục tiêu đến 2030 và tầm nhìn 2045</h3>
+  <p>Theo các văn kiện Đại hội XIII và được tiếp tục khẳng định, cụ thể hóa tại Đại hội XIV:</p>
+  <ul>
+    <li><b>Đến năm 2030:</b> nước ta là nước đang phát triển, có công nghiệp hiện đại, thu nhập trung bình cao.</li>
+    <li><b>Đến năm 2045:</b> trở thành nước phát triển, thu nhập cao.</li>
+    <li><b>Giai đoạn 2026–2030:</b> phấn đấu tăng trưởng GDP bình quân từ <b>10%/năm trở lên</b>; GDP bình quân đầu người đến năm 2030 khoảng <b>8.500 USD</b>.</li>
+  </ul>
+  <div class="box red">
+    <div class="label">Lưu ý khi trích dẫn</div>
+    <p>Các con số mục tiêu được điều chỉnh theo từng kỳ đại hội. Khi viết bài thu hoạch, nên ghi rõ nguồn: “theo Văn kiện Đại hội XIV” hoặc “theo Nghị quyết Đại hội XIII”. Tránh trích một con số mà không nói nó thuộc văn kiện nào — đây là lỗi phổ biến khiến bài bị trừ điểm.</p>
+  </div>
+
+  <h3>6. Ba đột phá chiến lược</h3>
+  <table class="t">
+    <thead><tr><th style="width:42mm">Đột phá</th><th>Nội dung cốt lõi</th></tr></thead>
+    <tbody>
+      <tr><td><b>Thể chế</b></td><td>Hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa; thể chế về sở hữu, phân phối, quản lý; cải cách hành chính, cải thiện môi trường đầu tư kinh doanh.</td></tr>
+      <tr><td><b>Nguồn nhân lực</b></td><td>Phát triển nguồn nhân lực chất lượng cao, nhất là nhân lực khoa học công nghệ, chuyển đổi số; đổi mới căn bản, toàn diện giáo dục và đào tạo.</td></tr>
+      <tr><td><b>Kết cấu hạ tầng</b></td><td>Xây dựng hệ thống kết cấu hạ tầng đồng bộ, hiện đại về giao thông, năng lượng, thông tin, hạ tầng số, ứng phó biến đổi khí hậu.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>7. Mười hai định hướng và sáu nhiệm vụ trọng tâm</h3>
+  <p>Văn kiện đại hội xác định 12 định hướng phát triển đất nước và 6 nhiệm vụ trọng tâm cho cả nhiệm kỳ. Khi học trên lớp, nên ghi đủ 12 định hướng theo tài liệu của lớp; với 6 nhiệm vụ trọng tâm, cần nhớ nhóm nội dung: hoàn thiện thể chế và phát triển kinh tế; xây dựng Đảng và hệ thống chính trị; phòng, chống tham nhũng, tiêu cực; phát triển văn hóa, con người; bảo đảm quốc phòng, an ninh, đối ngoại; giải quyết các vấn đề xã hội bức xúc.</p>
+  <div class="box">
+    <div class="label">Câu hỏi hay gặp</div>
+    <p><b>Vì sao phải “đổi mới” nhưng vẫn “kiên định”?</b> Kiên định là giữ nguyên mục tiêu độc lập dân tộc và chủ nghĩa xã hội, giữ nguyên vai trò lãnh đạo của Đảng; đổi mới là thay cách làm, cách tổ chức, cách huy động nguồn lực để đạt mục tiêu đó. Đổi mới không phải là từ bỏ mục tiêu; kiên định không phải là bảo thủ cách làm.</p>
+  </div>
+
+  <h3>8. Câu hỏi ôn tập chuyên đề 2</h3>
+  <ol class="kv">
+    <li>Trình bày tám đặc trưng của xã hội xã hội chủ nghĩa mà nhân dân ta xây dựng.</li>
+    <li>Nêu tám phương hướng cơ bản xây dựng đất nước trong thời kỳ quá độ.</li>
+    <li>Phân tích một trong tám quan hệ lớn và liên hệ với thực tiễn trường học.</li>
+    <li>Ba đột phá chiến lược là gì? Vì sao nguồn nhân lực được coi là đột phá?</li>
+    <li>Trình bày mục tiêu đến năm 2030, tầm nhìn 2045 và trách nhiệm của giáo viên trong việc hiện thực hóa mục tiêu đó.</li>
+  </ol>
+</section>
+
+<!-- ================= C3 ================= -->
+<section class="part" id="c3">
+  <div class="part-head">
+    <div class="no">PHẦN C · CHUYÊN ĐỀ 3</div>
+    <h2>Nội dung cơ bản của Điều lệ Đảng Cộng sản Việt Nam</h2>
+  </div>
+
+  <div class="box gray">
+    <div class="label gray">Cần nắm được gì</div>
+    <p>Điều kiện vào Đảng; nhiệm vụ và quyền của đảng viên; nguyên tắc tập trung dân chủ; tổ chức cơ sở đảng và chi bộ; thủ tục kết nạp và thời gian dự bị; các hình thức kỷ luật. Đây là bài <b>dễ mất điểm nhất</b> vì nhiều người học thuộc lòng mà không phân biệt được “nhiệm vụ” với “quyền”, hoặc nhầm hình thức kỷ luật của đảng viên với của tổ chức đảng.</p>
+  </div>
+
+  <h3>1. Vị trí và kết cấu của Điều lệ Đảng</h3>
+  <p>Điều lệ Đảng là văn bản cơ bản quy định về mục tiêu, lý tưởng, nguyên tắc tổ chức và hoạt động, nhiệm vụ và quyền của đảng viên, hệ thống tổ chức, công tác kiểm tra, giám sát và kỷ luật của Đảng. Điều lệ hiện hành được Đại hội XI (1/2011) thông qua, gồm <b>12 chương, 48 điều</b>. Đại hội XIV (1/2026) <b>không sửa Điều lệ</b>; việc sửa đổi, bổ sung được dự kiến thực hiện tại Đại hội XV.</p>
+  <p>Để thi hành Điều lệ, Trung ương ban hành các văn bản hướng dẫn. Sau Đại hội XIV có: <b>Quy định 20-QĐ/TW ngày 8/4/2026</b> về thi hành Điều lệ Đảng (46 điều), <b>Hướng dẫn 01-HD/TW ngày 19/5/2026</b> và <b>Quy định 207-QĐ/TW ngày 26/7/2026</b> về những điều đảng viên không được làm (19 điều). Khi học, nên ghi kèm số hiệu văn bản bên cạnh mỗi nội dung — vừa dễ nhớ, vừa đúng yêu cầu trích dẫn.</p>
+
+  <h3>2. Điều kiện để trở thành đảng viên</h3>
+  <p>Theo Điều 1 Điều lệ, người vào Đảng phải bảo đảm các điều kiện: là <b>công dân Việt Nam từ 18 tuổi trở lên</b>; <b>thừa nhận và tự nguyện</b> thực hiện Cương lĩnh chính trị, Điều lệ Đảng, nghị quyết của Đảng và pháp luật của Nhà nước; <b>hoạt động trong một tổ chức cơ sở đảng</b>; có lý lịch rõ ràng; đóng đảng phí theo quy định.</p>
+  <p>Ngoài các điều kiện pháp lý trên, thực tiễn kết nạp đòi hỏi người vào Đảng phải được quần chúng tín nhiệm, có phẩm chất chính trị và đạo đức tốt, hoàn thành tốt nhiệm vụ chuyên môn, tích cực trong các phong trào của đơn vị.</p>
+
+  <h3>3. Năm nhóm nhiệm vụ của đảng viên</h3>
+  <p>Điều 2 Điều lệ quy định nhiệm vụ của đảng viên. Để dễ nhớ khi ôn thi, có thể nhóm thành năm ý (cách nhóm này chỉ phục vụ học tập, không phải văn bản gốc):</p>
+  <table class="t">
+    <thead><tr><th style="width:9mm" class="c">#</th><th>Nhóm nhiệm vụ</th><th style="width:52mm">Từ khóa</th></tr></thead>
+    <tbody>
+      <tr><td class="c num">1</td><td>Trung thành với mục tiêu, lý tưởng của Đảng; chấp hành Cương lĩnh, Điều lệ, nghị quyết, chỉ thị của Đảng và pháp luật Nhà nước; hoàn thành tốt nhiệm vụ được giao; phục tùng sự phân công, điều động của Đảng</td><td>Trung thành — chấp hành — hoàn thành</td></tr>
+      <tr><td class="c num">2</td><td>Không ngừng học tập, rèn luyện, nâng cao trình độ, năng lực, phẩm chất chính trị, đạo đức; giữ lối sống lành mạnh; đấu tranh chống chủ nghĩa cá nhân, cơ hội, quan liêu, tham nhũng, lãng phí và các biểu hiện tiêu cực</td><td>Học tập — rèn luyện — chống tiêu cực</td></tr>
+      <tr><td class="c num">3</td><td>Liên hệ chặt chẽ với nhân dân, tôn trọng và phát huy quyền làm chủ của nhân dân; chăm lo đời sống vật chất, tinh thần, bảo vệ quyền lợi chính đáng của nhân dân; làm công tác quần chúng, công tác xã hội</td><td>Gắn dân — chăm lo — vận động</td></tr>
+      <tr><td class="c num">4</td><td>Tham gia xây dựng, bảo vệ đường lối, chính sách và tổ chức của Đảng; phục tùng kỷ luật, giữ gìn đoàn kết thống nhất; thường xuyên tự phê bình và phê bình, trung thực với Đảng; làm công tác phát triển đảng viên</td><td>Xây Đảng — kỷ luật — đoàn kết</td></tr>
+      <tr><td class="c num">5</td><td>Sinh hoạt đảng đều đặn, đóng đảng phí đúng quy định; giữ gìn tư cách, danh dự của người đảng viên; bảo vệ bí mật của Đảng và Nhà nước</td><td>Sinh hoạt — đảng phí — tư cách</td></tr>
+    </tbody>
+  </table>
+
+  <h3>4. Bốn quyền của đảng viên</h3>
+  <ol>
+    <li><b>Được thông tin và thảo luận</b> các vấn đề về Cương lĩnh chính trị, Điều lệ Đảng, đường lối, chủ trương, chính sách của Đảng; <b>biểu quyết</b> công việc của Đảng.</li>
+    <li><b>Ứng cử, đề cử và bầu cử</b> cơ quan lãnh đạo các cấp của Đảng theo quy định của Điều lệ.</li>
+    <li><b>Phê bình, chất vấn</b> về hoạt động của tổ chức đảng và đảng viên ở mọi cấp trong phạm vi tổ chức; báo cáo, kiến nghị lên cơ quan có thẩm quyền.</li>
+    <li><b>Trình bày ý kiến</b> khi tổ chức đảng nhận xét, quyết định công tác hoặc thi hành kỷ luật đối với mình; khi bị kỷ luật có quyền <b>khiếu nại</b>.</li>
+  </ol>
+  <div class="box gold">
+    <div class="label gold">Phân biệt nhanh</div>
+    <p><b>Nhiệm vụ</b> là việc phải làm — động từ mang tính bắt buộc: chấp hành, học tập, liên hệ, tham gia, sinh hoạt. <b>Quyền</b> là việc được làm — động từ mang tính được phép: được thông tin, được biểu quyết, được ứng cử, được phê bình, được khiếu nại. Khi làm trắc nghiệm, thấy chữ “được” thường là quyền; thấy chữ “phải”, “chấp hành”, “hoàn thành” thường là nhiệm vụ.</p>
+  </div>
+
+  <h3>5. Nguyên tắc tập trung dân chủ</h3>
+  <p>Đảng tổ chức và hoạt động theo nguyên tắc tập trung dân chủ. Bốn nội dung cốt lõi cần nắm:</p>
+  <ul>
+    <li>Cơ quan lãnh đạo các cấp của Đảng đều do <b>bầu cử</b> lập ra, thực hiện <b>tập thể lãnh đạo, cá nhân phụ trách</b>.</li>
+    <li><b>Thiểu số phục tùng đa số, cấp dưới phục tùng cấp trên, cá nhân phục tùng tổ chức.</b></li>
+    <li>Nghị quyết của các cơ quan lãnh đạo của Đảng phải được <b>chấp hành nghiêm chỉnh</b>; không ai được tự do hành động trái nghị quyết.</li>
+    <li>Trong Đảng <b>dân chủ rộng rãi</b>, nhưng phải có <b>kỷ luật nghiêm minh</b>; dân chủ không loại trừ tập trung, tập trung không triệt tiêu dân chủ.</li>
+  </ul>
+  <div class="box red">
+    <div class="label">Câu hỏi hay bị hỏi</div>
+    <p>“Tập thể lãnh đạo, cá nhân phụ trách” nghĩa là việc lớn phải bàn trong tập thể, quyết theo đa số; nhưng khi đã phân công thì một người chịu trách nhiệm chính, không đùn đẩy cho tập thể. Đây là cách chống cả hai thói xấu: độc đoán cá nhân và “cha chung không ai khóc”.</p>
+  </div>
+
+  <h3>6. Tổ chức cơ sở đảng và chi bộ</h3>
+  <p>Tổ chức cơ sở đảng là nền tảng của Đảng, là hạt nhân chính trị ở cơ sở. Mỗi tổ chức cơ sở đảng gồm các đảng viên sinh hoạt trong một đơn vị cơ sở; nơi có đông đảng viên thì thành lập các chi bộ trực thuộc. Chi bộ là đơn vị tổ chức cơ bản, nơi diễn ra sinh hoạt đảng định kỳ, nơi đảng viên tự phê bình, phê bình và bàn các công việc cụ thể của đơn vị.</p>
+  <p>Ở trường học, chi bộ (hoặc đảng bộ bộ phận) lãnh đạo thực hiện nhiệm vụ chính trị của đơn vị: nâng cao chất lượng dạy và học, xây dựng đội ngũ, thực hiện dân chủ ở cơ sở, chăm lo đời sống giáo viên và học sinh. Đây chính là chỗ “liên hệ bản thân” có địa chỉ rõ ràng nhất khi viết bài thu hoạch.</p>
+
+  <h3>7. Kỷ luật Đảng</h3>
+  <table class="t">
+    <thead><tr><th style="width:44mm">Đối tượng</th><th>Các hình thức kỷ luật</th></tr></thead>
+    <tbody>
+      <tr><td><b>Đảng viên</b></td><td>Khiển trách — Cảnh cáo — Cách chức — Khai trừ</td></tr>
+      <tr><td><b>Tổ chức đảng</b></td><td>Khiển trách — Cảnh cáo — Giải tán</td></tr>
+    </tbody>
+  </table>
+  <p>Nguyên tắc xử lý kỷ luật: công minh, chính xác, khách quan, đúng người, đúng việc, đúng quy định; không dùng hình thức kỷ luật thay cho xử lý hình sự và ngược lại; bảo đảm quyền khiếu nại của đảng viên. Đảng viên bị khai trừ thì mất tư cách đảng viên; tổ chức đảng bị giải tán thì các đảng viên trong tổ chức đó phải sinh hoạt ở tổ chức khác theo chỉ định của cấp ủy.</p>
+
+  <h3>8. Câu hỏi ôn tập chuyên đề 3</h3>
+  <ol class="kv">
+    <li>Trình bày điều kiện để trở thành đảng viên Đảng Cộng sản Việt Nam.</li>
+    <li>Nêu nhiệm vụ của đảng viên. Phân biệt nhiệm vụ và quyền bằng ví dụ cụ thể.</li>
+    <li>Phân tích nội dung nguyên tắc tập trung dân chủ. Vì sao phải thực hiện “tập thể lãnh đạo, cá nhân phụ trách”?</li>
+    <li>Nêu các hình thức kỷ luật đối với đảng viên và đối với tổ chức đảng.</li>
+    <li>Với vai trò giáo viên, đồng chí sẽ làm gì để góp phần xây dựng chi bộ trong sạch, vững mạnh?</li>
+  </ol>
+</section>
+
+<!-- ================= C4 ================= -->
+<section class="part" id="c4">
+  <div class="part-head">
+    <div class="no">PHẦN C · CHUYÊN ĐỀ 4</div>
+    <h2>Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh</h2>
+  </div>
+
+  <div class="box gray">
+    <div class="label gray">Cần nắm được gì</div>
+    <p>Khái niệm tư tưởng Hồ Chí Minh; những nội dung cốt lõi; bốn chuẩn mực đạo đức; năm kiểu phong cách; và yêu cầu của Chỉ thị 07-CT/TW (13/7/2026). Bài này không khó để hiểu nhưng khó để <b>viết cho thật</b> — vì ai cũng viết được những câu chung chung. Điểm khác biệt nằm ở việc chọn một việc làm rất cụ thể và mô tả đúng cách làm.</p>
+  </div>
+
+  <h3>1. Tư tưởng Hồ Chí Minh là gì</h3>
+  <p>Theo Đại hội IX (2001), “Tư tưởng Hồ Chí Minh là một hệ thống quan điểm toàn diện và sâu sắc về những vấn đề cơ bản của cách mạng Việt Nam; là kết quả của sự vận dụng và phát triển sáng tạo chủ nghĩa Mác - Lênin vào điều kiện cụ thể của nước ta; kế thừa và phát triển các giá trị truyền thống tốt đẹp của dân tộc; tiếp thu tinh hoa văn hóa nhân loại”.</p>
+  <p>Cần phân biệt ba tầng: <b>tư tưởng</b> (hệ thống quan điểm, lý luận), <b>đạo đức</b> (chuẩn mực sống và ứng xử), <b>phong cách</b> (cách làm việc, cách nói, cách sống hằng ngày). Học tập Bác là học cả ba, nhưng bắt đầu từ tầng dễ thấy nhất: phong cách.</p>
+
+  <h3>2. Những nội dung cốt lõi</h3>
+  <table class="t">
+    <thead><tr><th style="width:9mm" class="c">#</th><th>Nội dung</th><th style="width:50mm">Diễn giải ngắn</th></tr></thead>
+    <tbody>
+      <tr><td class="c num">1</td><td>Giải phóng dân tộc, giải phóng giai cấp, giải phóng con người</td><td>Mục tiêu cao nhất, xuyên suốt</td></tr>
+      <tr><td class="c num">2</td><td>Chủ nghĩa xã hội và con đường quá độ lên chủ nghĩa xã hội ở Việt Nam</td><td>Đi lên từ một nước nông nghiệp, bỏ qua chế độ tư bản</td></tr>
+      <tr><td class="c num">3</td><td>Đảng Cộng sản Việt Nam và Nhà nước của nhân dân, do nhân dân, vì nhân dân</td><td>Đảng lãnh đạo, Nhà nước quản lý, nhân dân làm chủ</td></tr>
+      <tr><td class="c num">4</td><td>Đại đoàn kết toàn dân tộc và đoàn kết quốc tế</td><td>“Đoàn kết, đoàn kết, đại đoàn kết”</td></tr>
+      <tr><td class="c num">5</td><td>Văn hóa, đạo đức, con người</td><td>Văn hóa soi đường, đạo đức là gốc</td></tr>
+      <tr><td class="c num">6</td><td>Quốc phòng, an ninh, đối ngoại, xây dựng và bảo vệ Tổ quốc</td><td>“Dựng nước” gắn với “giữ nước”</td></tr>
+    </tbody>
+  </table>
+
+  <h3>3. Bốn chuẩn mực đạo đức</h3>
+  <ol>
+    <li><b>Trung với nước, hiếu với dân.</b> Trung thành với sự nghiệp của Đảng, của dân tộc; hết lòng phục vụ nhân dân, coi nhân dân là chủ.</li>
+    <li><b>Cần, kiệm, liêm, chính, chí công vô tư.</b> Cần: siêng năng, làm việc có kế hoạch. Kiệm: tiết kiệm thời gian, tiền của, không xa hoa. Liêm: trong sạch, không tham của người. Chính: ngay thẳng, không gian dối. Chí công vô tư: đặt việc chung lên trên việc riêng.</li>
+    <li><b>Yêu thương con người, sống có nghĩa, có tình.</b> Thương người, tôn trọng nhân phẩm, giúp nhau khi khó khăn; nghiêm khắc với mình, rộng lượng với người.</li>
+    <li><b>Tinh thần quốc tế trong sáng.</b> Đoàn kết, thủy chung với bạn bè quốc tế; tôn trọng các dân tộc; chống chủ nghĩa dân tộc hẹp hòi.</li>
+  </ol>
+  <div class="quote">“Cần, kiệm, liêm, chính” không phải bốn đức tính rời nhau, mà là một vòng tròn: cần mà không kiệm thì phung phí; kiệm mà không liêm thì keo kiệt, tham lam; liêm mà không chính thì vẫn có thể gian dối.</div>
+
+  <h3>4. Năm kiểu phong cách Hồ Chí Minh</h3>
+  <table class="t">
+    <thead><tr><th style="width:38mm">Phong cách</th><th>Biểu hiện</th><th style="width:40mm">Áp dụng cho giáo viên</th></tr></thead>
+    <tbody>
+      <tr><td><b>Tư duy</b></td><td>Độc lập, tự chủ, sáng tạo; xuất phát từ thực tiễn; luôn đặt câu hỏi “vì sao”.</td><td>Không dạy theo vở cũ máy móc; điều chỉnh bài giảng theo học sinh thật.</td></tr>
+      <tr><td><b>Làm việc</b></td><td>Khoa học, có kế hoạch, đúng giờ, dứt việc; “việc hôm nay chớ để ngày mai”.</td><td>Lên giáo án theo tuần, chấm bài đúng hạn, họp đúng giờ.</td></tr>
+      <tr><td><b>Diễn đạt</b></td><td>Ngắn gọn, dễ hiểu, nói và viết sao cho người nghe hiểu ngay.</td><td>Giải thích hóa học bằng ví dụ đời thường, bỏ lối nói dài dòng.</td></tr>
+      <tr><td><b>Sinh hoạt</b></td><td>Giản dị, tiết kiệm, trong sạch, hòa mình với mọi người.</td><td>Sống gần gũi học sinh, không xa cách, không phô trương.</td></tr>
+      <tr><td><b>Ứng xử</b></td><td>Chân tình, cởi mở, tôn trọng con người; “dĩ công vi thượng”.</td><td>Lắng nghe phụ huynh, không định kiến học sinh yếu.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>5. Yêu cầu mới: Chỉ thị 07-CT/TW (13/7/2026)</h3>
+  <p>Tiếp nối Chỉ thị 05-CT/TW (2016) và Kết luận 01-KL/TW (2021), ngày 13/7/2026 Ban Bí thư ban hành <b>Chỉ thị 07-CT/TW</b> về đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh. Chỉ thị xác định <b>5 nhóm nhiệm vụ</b> và phần tổ chức thực hiện, đặt trọng tâm vào việc làm theo bằng sản phẩm cụ thể, gắn với trách nhiệm nêu gương của cán bộ, đảng viên, nhất là người đứng đầu.</p>
+  <div class="box red">
+    <div class="label">Lưu ý</div>
+    <p>Khi học trên lớp, cần ghi <b>đúng 5 nhóm nhiệm vụ theo văn bản gốc</b> mà giảng viên cung cấp. Không nên tự “sáng tác” tên nhóm nhiệm vụ. Nếu viết bài thu hoạch, chỉ cần trích đúng tinh thần: học đi đôi với làm, lấy kết quả công việc làm thước đo, nêu gương từ việc nhỏ.</p>
+  </div>
+
+  <h3>6. Liên hệ với nghề giáo</h3>
+  <p>Ba việc dễ làm nhất, đo được kết quả:</p>
+  <ol>
+    <li><b>Nêu gương trong chuyên môn:</b> mỗi học kỳ đổi mới ít nhất một bài giảng khó, có sản phẩm cụ thể (bộ thí nghiệm an toàn, phiếu học tập, ngân hàng câu hỏi).</li>
+    <li><b>Nêu gương trong lối sống:</b> đúng giờ, không dùng điện thoại trong giờ dạy, không nói xấu đồng nghiệp, chi tiêu tiết kiệm của công.</li>
+    <li><b>Nêu gương trong quan hệ với học sinh:</b> không bỏ mặc học sinh yếu, không phân biệt đối xử, giữ lời hứa với học sinh và phụ huynh.</li>
+  </ol>
+
+  <h3>7. Câu hỏi ôn tập chuyên đề 4</h3>
+  <ol class="kv">
+    <li>Trình bày khái niệm tư tưởng Hồ Chí Minh theo Đại hội IX.</li>
+    <li>Nêu bốn chuẩn mực đạo đức Hồ Chí Minh và phân tích một chuẩn mực gắn với nghề giáo.</li>
+    <li>Năm kiểu phong cách Hồ Chí Minh là gì? Chọn một kiểu và nêu việc làm cụ thể của bản thân.</li>
+    <li>Chỉ thị 07-CT/TW (13/7/2026) yêu cầu gì? Vì sao phải “học đi đôi với làm”?</li>
+    <li>Viết một đoạn 10 dòng: “Tôi đã thay đổi gì sau khi học tập phong cách Hồ Chí Minh?”</li>
+  </ol>
+</section>
+
+<!-- ================= C5 ================= -->
+<section class="part" id="c5">
+  <div class="part-head">
+    <div class="no">PHẦN C · CHUYÊN ĐỀ 5</div>
+    <h2>Phấn đấu trở thành đảng viên Đảng Cộng sản Việt Nam</h2>
+  </div>
+
+  <div class="box gray">
+    <div class="label gray">Cần nắm được gì</div>
+    <p>Động cơ vào Đảng; tiêu chuẩn của người đảng viên; quy trình kết nạp; thời gian dự bị và nhiệm vụ của đảng viên dự bị; cách viết bài thu hoạch. Đây là bài “quyết định” — vì bài thu hoạch cuối khóa thường được chấm chính từ nội dung này.</p>
+  </div>
+
+  <h3>1. Vì sao phấn đấu vào Đảng</h3>
+  <p>Vào Đảng là tự nguyện đứng vào đội tiên phong, nhận thêm trách nhiệm chứ không phải nhận thêm quyền lợi. Người vào Đảng được tổ chức giáo dục, rèn luyện, được tham gia bàn những việc lớn của đơn vị và đất nước; đổi lại phải chịu kỷ luật cao hơn, phải gương mẫu trước quần chúng, phải làm những việc khó trước.</p>
+  <div class="box">
+    <div class="label">Ba câu tự hỏi trước khi viết đơn</div>
+    <p><b>1.</b> Nếu vào Đảng mà không được giao chức vụ nào, tôi còn muốn vào không?<br>
+    <b>2.</b> Việc gì tôi đang làm tốt mà nếu là đảng viên tôi phải làm tốt hơn?<br>
+    <b>3.</b> Ai là người thật sự hiểu tôi nhất và sẵn sàng giới thiệu tôi — người đó có dám nói thật khuyết điểm của tôi không?</p>
+  </div>
+
+  <h3>2. Động cơ đúng và động cơ lệch</h3>
+  <table class="t">
+    <thead><tr><th style="width:50%">Động cơ đúng đắn</th><th>Động cơ cần sửa</th></tr></thead>
+    <tbody>
+      <tr><td>Muốn được rèn luyện trong tổ chức có kỷ luật, có lý tưởng.</td><td>Vào Đảng để “có chỗ đứng”, dễ thăng tiến, dễ chuyển công tác.</td></tr>
+      <tr><td>Muốn góp sức nhiều hơn cho học sinh, nhà trường, địa phương.</td><td>Vào Đảng vì áp lực, vì “người ta vào thì mình cũng vào”.</td></tr>
+      <tr><td>Tự nguyện, hiểu rõ trách nhiệm và nghĩa vụ phải gánh thêm.</td><td>Vào Đảng để có “uy” trước đồng nghiệp, phụ huynh.</td></tr>
+      <tr><td>Sẵn sàng nhận việc khó, chịu phê bình, sửa khuyết điểm.</td><td>Chỉ muốn nhận việc nhẹ, ngại va chạm, sợ mất lòng.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>3. Tiêu chuẩn của người đảng viên</h3>
+  <ul>
+    <li><b>Về chính trị:</b> trung thành với lý tưởng của Đảng; nắm và chấp hành chủ trương, đường lối; có lập trường vững vàng trước thông tin sai lệch.</li>
+    <li><b>Về đạo đức, lối sống:</b> trung thực, giản dị, không tham nhũng, không lãng phí; giữ gìn phẩm chất nhà giáo.</li>
+    <li><b>Về năng lực, uy tín:</b> hoàn thành tốt nhiệm vụ chuyên môn; được đồng nghiệp, học sinh, phụ huynh tín nhiệm.</li>
+    <li><b>Về quan hệ quần chúng:</b> gần gũi, lắng nghe, giúp đỡ mọi người; tích cực trong các phong trào của đơn vị và địa phương.</li>
+    <li><b>Về ý thức tổ chức, kỷ luật:</b> chấp hành sự phân công; sinh hoạt đều; tự phê bình và phê bình thẳng thắn.</li>
+  </ul>
+
+  <h3>4. Quy trình phấn đấu và kết nạp</h3>
+  <table class="t">
+    <thead><tr><th style="width:12mm" class="c">Bước</th><th>Nội dung</th><th style="width:44mm">Ghi chú thực tế</th></tr></thead>
+    <tbody>
+      <tr><td class="c num">1</td><td>Được giới thiệu đi học lớp <b>bồi dưỡng nhận thức về Đảng</b>, nhận giấy chứng nhận</td><td>Đây chính là lớp đang học tuần này</td></tr>
+      <tr><td class="c num">2</td><td>Viết <b>đơn xin vào Đảng</b> tự nguyện, khai lý lịch; chi bộ phân công đảng viên tìm hiểu, xác minh</td><td>Cần trung thực tuyệt đối về lý lịch</td></tr>
+      <tr><td class="c num">3</td><td>Chi bộ <b>giới thiệu hai đảng viên chính thức</b> (có ít nhất một năm công tác cùng đơn vị) nhận xét, giới thiệu</td><td>Người giới thiệu phải chịu trách nhiệm về lời giới thiệu</td></tr>
+      <tr><td class="c num">4</td><td>Chi bộ họp <b>xét, biểu quyết</b>; cấp ủy cấp trên xem xét, thẩm định hồ sơ, lấy ý kiến nơi cư trú</td><td>Thời gian có thể kéo dài vài tháng</td></tr>
+      <tr><td class="c num">5</td><td><b>Ra quyết định kết nạp</b>, tổ chức lễ kết nạp, đảng viên tuyên thệ trước cờ Đảng</td><td>Từ đây bắt đầu thời gian dự bị</td></tr>
+    </tbody>
+  </table>
+
+  <h3>5. Thời gian dự bị và chuyển chính thức</h3>
+  <p>Thời gian dự bị là <b>12 tháng</b>. Trong thời gian này, đảng viên dự bị sinh hoạt cùng chi bộ, học tập và làm việc như đảng viên chính thức nhưng <b>chưa có quyền biểu quyết, ứng cử, bầu cử</b> vào các cơ quan lãnh đạo của Đảng. Hết thời gian dự bị, chi bộ xét, nếu đủ điều kiện thì đề nghị công nhận đảng viên chính thức; nếu chưa đủ thì có thể kéo dài thời gian dự bị hoặc không công nhận.</p>
+  <div class="box gold">
+    <div class="label gold">Điểm dễ nhầm</div>
+    <p>Đảng viên dự bị <b>vẫn là đảng viên</b>, vẫn phải đóng đảng phí, vẫn bị kỷ luật nếu vi phạm — chỉ khác là chưa có quyền biểu quyết và ứng cử, bầu cử. Đừng nhầm “dự bị” với “chưa phải đảng viên”.</p>
+  </div>
+
+  <h3>6. Bài thu hoạch — viết thế nào để không sáo</h3>
+  <p>Bài thu hoạch cuối khóa thường 3–5 trang, bốn phần: (1) nhận thức về Đảng và về vị trí, vai trò của người đảng viên; (2) nhận thức về tư tưởng, đạo đức, phong cách Hồ Chí Minh; (3) liên hệ bản thân — ưu điểm, khuyết điểm, nguyên nhân; (4) phương hướng phấn đấu, có việc làm và thời hạn cụ thể.</p>
+  <p>Ba lỗi khiến bài bị đánh giá thấp: <b>thứ nhất</b>, phần liên hệ chỉ toàn ưu điểm; <b>thứ hai</b>, phương hướng viết bằng động từ chung chung (“tiếp tục nâng cao”, “không ngừng phấn đấu”) mà không có sản phẩm; <b>thứ ba</b>, chép nguyên văn tài liệu ở phần nhận thức. Cách sửa: mỗi khuyết điểm phải có một việc sửa và một mốc thời gian; mỗi phương hướng phải trả lời được “làm gì, ở đâu, khi nào, đo bằng gì”.</p>
+
+  <h3>7. Câu hỏi ôn tập chuyên đề 5</h3>
+  <ol class="kv">
+    <li>Phân tích động cơ đúng đắn khi vào Đảng. Nêu một động cơ lệch và cách khắc phục.</li>
+    <li>Trình bày các bước của quy trình kết nạp đảng viên.</li>
+    <li>Thời gian dự bị là bao lâu? Đảng viên dự bị khác đảng viên chính thức ở điểm nào?</li>
+    <li>Nêu ba việc làm cụ thể của bản thân trong 12 tháng tới để xứng đáng là đảng viên.</li>
+    <li>Viết phần “liên hệ bản thân” dài 1 trang, có ít nhất một khuyết điểm và cách sửa.</li>
+  </ol>
+</section>
+
+<!-- ================= PART D ================= -->
+<section class="part" id="d">
+  <div class="part-head">
+    <div class="no">PHẦN D</div>
+    <h2>Gia Lai — học và làm theo Bác từ địa phương</h2>
+  </div>
+
+  <p>Phần này bổ sung phần liên hệ địa phương mà nhiều lớp bồi dưỡng yêu cầu trong bài thu hoạch. Nguyên tắc biên soạn: <b>chỉ dùng số liệu đã công bố</b>; chỗ nào tỉnh còn đang lấy ý kiến hoặc có nhiều cách tính thì ghi rõ, không khẳng định thay cho cơ quan có thẩm quyền.</p>
+
+  <h3>1. Một tỉnh mới, quy mô lớn</h3>
+  <table class="t">
+    <thead><tr><th style="width:44mm">Nội dung</th><th>Số liệu / ghi chú</th></tr></thead>
+    <tbody>
+      <tr><td>Tên tỉnh</td><td>Gia Lai (hợp nhất tỉnh Bình Định và tỉnh Gia Lai)</td></tr>
+      <tr><td>Căn cứ pháp lý</td><td>Nghị quyết 202/2025/QH15 của Quốc hội về sắp xếp đơn vị hành chính cấp tỉnh, có hiệu lực từ ngày 12/6/2025</td></tr>
+      <tr><td>Diện tích</td><td>21.576,53 km² — đứng thứ hai cả nước về diện tích</td></tr>
+      <tr><td>Dân số</td><td>3.583.693 người</td></tr>
+      <tr><td>Trung tâm chính trị - hành chính</td><td>Thành phố Quy Nhơn</td></tr>
+      <tr><td>Tổ chức chính quyền</td><td>Thực hiện mô hình chính quyền địa phương hai cấp (tỉnh — xã/phường) theo chủ trương sắp xếp đơn vị hành chính</td></tr>
+    </tbody>
+  </table>
+  <p>Ý nghĩa với người học: tỉnh mới có quy mô dân số và diện tích lớn, đa dạng về địa hình (ven biển, đồng bằng, trung du, Tây Nguyên), đa dạng về văn hóa (Kinh, Bana, Giarai, Chăm, Hrê…). Đây vừa là lợi thế về tài nguyên, du lịch, nông nghiệp, vừa là thách thức về quản lý, hạ tầng và khoảng cách phát triển giữa các vùng.</p>
+
+  <h3>2. Mốc lịch sử Đảng bộ — cái gì đã xác định, cái gì còn đang lấy ý kiến</h3>
+  <div class="box red">
+    <div class="label">Rất quan trọng khi viết bài</div>
+    <p>Đây là nội dung dễ sai nhất. Tỉnh đã tổ chức <b>lấy ý kiến nhân dân từ ngày 16/10 đến ngày 10/11/2026</b> về mốc thời gian thành lập tổ chức Đảng đầu tiên và Đảng bộ tỉnh sau hợp nhất. <b>Tại thời điểm biên soạn (15/11/2026), kết luận chính thức chưa được công bố.</b> Vì vậy trong bài thu hoạch, chỉ nên viết: “theo tài liệu của lớp” hoặc “theo phương án đang được lấy ý kiến”, tuyệt đối không khẳng định như một mốc đã chốt.</p>
+  </div>
+  <table class="t">
+    <thead><tr><th style="width:30mm">Mốc</th><th>Nội dung</th><th style="width:32mm">Trạng thái</th></tr></thead>
+    <tbody>
+      <tr><td><b>3/1930</b></td><td>Chi bộ Cộng sản Nhà máy Đèn Quy Nhơn thành lập, gồm 5 đảng viên, Bí thư là đồng chí Lê Xuân Trữ. Đây là một trong những chi bộ cộng sản đầu tiên ở miền Trung, đặt nền móng cho phong trào cách mạng vùng đất nay thuộc tỉnh Gia Lai.</td><td>Đã được ghi nhận trong lịch sử Đảng bộ địa phương (phần thuộc Bình Định trước hợp nhất)</td></tr>
+      <tr><td><b>1/10/1945</b></td><td>Chi bộ Pleiku được thành lập, gồm 9 đồng chí — tổ chức Đảng đầu tiên trên địa bàn thị xã Pleiku (nay là thành phố Pleiku).</td><td>Đã được ghi nhận trong lịch sử Đảng bộ Gia Lai (trước hợp nhất)</td></tr>
+      <tr><td><b>10/12/1945</b></td><td>Đảng bộ tỉnh Gia Lai (phạm vi trước hợp nhất) được thành lập.</td><td>Đã được ghi nhận trong lịch sử Đảng bộ Gia Lai (trước hợp nhất)</td></tr>
+      <tr><td><b>Đầu 3/1930<br>và cuối 1937</b></td><td>Phương án đề xuất mốc thành lập tổ chức Đảng đầu tiên và Đảng bộ tỉnh Gia Lai <i>sau hợp nhất</i>, đưa ra trong quá trình lấy ý kiến nhân dân.</td><td><b>Đang lấy ý kiến</b> — chưa có kết luận chính thức</td></tr>
+    </tbody>
+  </table>
+  <div class="box gold">
+    <div class="label gold">Cách viết an toàn</div>
+    <p>“Trên địa bàn tỉnh Gia Lai ngày nay, tổ chức Đảng đầu tiên được ghi nhận là Chi bộ Cộng sản Nhà máy Đèn Quy Nhơn (tháng 3/1930); sau đó là Chi bộ Pleiku (1/10/1945) và Đảng bộ tỉnh Gia Lai (10/12/1945). Hiện tỉnh đang hoàn thiện việc xác định mốc chính thức cho Đảng bộ tỉnh sau hợp nhất.” — Viết như vậy là vừa đủ ý, vừa không sai.</p>
+  </div>
+
+  <h3>3. Đại hội Đảng bộ tỉnh lần thứ I, nhiệm kỳ 2025–2030</h3>
+  <p>Đại hội đại biểu Đảng bộ tỉnh Gia Lai lần thứ I, nhiệm kỳ 2025–2030, diễn ra từ ngày <b>2 đến 4/10/2025</b> tại Trung tâm Hội nghị tỉnh, với <b>449/450 đại biểu</b> được triệu tập có mặt. Đại hội đã thông qua Nghị quyết, bầu Ban Chấp hành Đảng bộ tỉnh; đồng chí <b>Thái Đại Ngọc</b> được bầu giữ chức Bí thư Tỉnh ủy nhiệm kỳ 2025–2030.</p>
+  <p><b>Mục tiêu chung</b> theo Nghị quyết Đại hội: xây dựng tỉnh Gia Lai phát triển nhanh, bền vững; trở thành trung tâm công nghiệp chế biến, chế tạo, năng lượng tái tạo, nông nghiệp công nghệ cao, dịch vụ, du lịch, chip bán dẫn và trí tuệ nhân tạo; phấn đấu trở thành tỉnh phát triển khá, cùng cả nước bước vào kỷ nguyên phát triển mới.</p>
+
+  <table class="t">
+    <thead><tr><th style="width:56mm">Chỉ tiêu chủ yếu đến năm 2030</th><th>Mức phấn đấu</th></tr></thead>
+    <tbody>
+      <tr><td>Tốc độ tăng trưởng GRDP bình quân/năm</td><td><b>10 – 10,5%</b></td></tr>
+      <tr><td>GRDP bình quân đầu người</td><td><b>6.300 – 6.500 USD</b></td></tr>
+      <tr><td>Tổng thu ngân sách nhà nước (năm 2030)</td><td><b>trên 41.000 tỷ đồng</b></td></tr>
+      <tr><td>Tổng kim ngạch xuất khẩu giai đoạn 2026–2030</td><td><b>trên 17 tỷ USD</b></td></tr>
+      <tr><td>Khách du lịch</td><td><b>18,5 triệu lượt</b></td></tr>
+      <tr><td>Trường đạt chuẩn quốc gia</td><td><b>từ 80,5% trở lên</b></td></tr>
+    </tbody>
+  </table>
+  <p class="tiny">Nguồn: Nghị quyết Đại hội đại biểu Đảng bộ tỉnh Gia Lai lần thứ I, nhiệm kỳ 2025–2030; thông tin công bố của TTXVN (Infographics, 1/12/2025). Một số tài liệu trích dẫn chỉ tiêu GRDP bình quân đầu người ở mức 5.900 – 6.000 USD; khi viết bài nên dùng mức 6.300 – 6.500 USD và ghi rõ nguồn là Nghị quyết Đại hội Đảng bộ tỉnh.</p>
+
+  <h3>4. Kết quả kinh tế - xã hội năm 2025</h3>
+  <table class="t">
+    <thead><tr><th style="width:56mm">Chỉ tiêu</th><th>Kết quả năm 2025</th></tr></thead>
+    <tbody>
+      <tr><td>Tăng trưởng GRDP</td><td><b>7,2%</b></td></tr>
+      <tr><td>Quy mô GRDP</td><td>khoảng <b>270.700 tỷ đồng</b></td></tr>
+      <tr><td>GRDP bình quân đầu người</td><td><b>85,05 triệu đồng</b></td></tr>
+      <tr><td>Thu ngân sách nhà nước</td><td><b>trên 28.000 tỷ đồng</b></td></tr>
+      <tr><td>Chỉ số giá tiêu dùng (CPI)</td><td>tăng <b>4,11%</b></td></tr>
+    </tbody>
+  </table>
+  <p>Đọc bảng này cần thấy hai điều. <b>Thứ nhất</b>, mức tăng 7,2% là khá nhưng còn cách mục tiêu 10–10,5%/năm của cả nhiệm kỳ — nghĩa là các năm sau phải nỗ lực nhiều hơn, không thể “bình quân” máy móc. <b>Thứ hai</b>, CPI tăng 4,11% cho thấy áp lực giá cả vẫn hiện hữu, ảnh hưởng trực tiếp đến đời sống giáo viên và học sinh, nhất là ở vùng sâu, vùng xa.</p>
+
+  <h3>5. Liên hệ với nghề dạy học Hóa học tại Gia Lai</h3>
+  <p>Đây là phần nên viết trong bài thu hoạch, vì nó chứng minh người học biết “chuyển” nghị quyết thành việc làm. Gia Lai có thế mạnh nông nghiệp (cà phê, hồ tiêu, mía đường, sắn, điều), chế biến gỗ, thủy sản và du lịch biển — mỗi lĩnh vực đều có thể dùng làm ngữ liệu dạy học Hóa học.</p>
+  <table class="t">
+    <thead><tr><th style="width:38mm">Nội dung dạy</th><th>Ngữ liệu Gia Lai</th><th style="width:44mm">Hoạt động cụ thể</th></tr></thead>
+    <tbody>
+      <tr><td>Phân bón — dinh dưỡng cây trồng</td><td>Vùng nguyên liệu cà phê, hồ tiêu, mía, sắn</td><td>Tính lượng N-P-K cho một hecta; phân tích vì sao bón thừa gây ô nhiễm đất, nước</td></tr>
+      <tr><td>Năng lượng và môi trường</td><td>Điện gió, điện mặt trời trên địa bàn tỉnh</td><td>Tính hiệu suất, so sánh nguồn năng lượng; thảo luận tác động môi trường</td></tr>
+      <tr><td>Chế biến thực phẩm</td><td>Đường mía, nước mắm, thủy sản</td><td>Mô phỏng quy trình, giải thích phản ứng thủy phân, lên men</td></tr>
+      <tr><td>Hóa học và an toàn</td><td>Thuốc bảo vệ thực vật, xử lý nước sinh hoạt</td><td>Đọc nhãn, hiểu độc tính, thực hành xử lý tình huống</td></tr>
+      <tr><td>Giáo dục địa phương</td><td>Lịch sử Đảng bộ, di tích, nhân vật</td><td>Dạy tích hợp trong tiết sinh hoạt lớp, hoạt động trải nghiệm</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box green">
+    <div class="label green">Ba việc làm cụ thể — có thể đưa thẳng vào bài thu hoạch</div>
+    <p><b>1.</b> Trong học kỳ II năm học 2026–2027, xây dựng <b>01 chuyên đề dạy học tích hợp giáo dục địa phương</b> gắn với một nội dung Hóa học (ví dụ: phân bón và canh tác bền vững ở Gia Lai), có phiếu học tập và sản phẩm học sinh.<br>
+    <b>2.</b> Mỗi năm học, phối hợp chi bộ và Đoàn trường tổ chức <b>01 hoạt động về nguồn</b> cho học sinh tại di tích lịch sử trên địa bàn, có bài thu hoạch của học sinh.<br>
+    <b>3.</b> Bản thân <b>đổi mới ít nhất 02 bài giảng khó</b> mỗi năm, có sản phẩm cụ thể (thí nghiệm an toàn, mô phỏng, ngân hàng câu hỏi) và được tổ chuyên môn góp ý, đánh giá.</p>
+  </div>
+
+  <h3>6. Câu hỏi ôn tập phần địa phương</h3>
+  <ol class="kv">
+    <li>Nêu các mốc lịch sử Đảng bộ địa phương đã được ghi nhận và cho biết mốc nào còn đang trong quá trình lấy ý kiến.</li>
+    <li>Trình bày mục tiêu chung và ba chỉ tiêu chủ yếu của tỉnh đến năm 2030.</li>
+    <li>Đánh giá kết quả kinh tế - xã hội năm 2025 và chỉ ra hai thách thức cần giải quyết.</li>
+    <li>Với môn Hóa học, đồng chí có thể xây dựng chuyên đề giáo dục địa phương nào? Mô tả ngắn sản phẩm học sinh.</li>
+  </ol>
+</section>
+
+<!-- ================= PART E ================= -->
+<section class="part" id="e">
+  <div class="part-head">
+    <div class="no">PHẦN E</div>
+    <h2>40 câu trắc nghiệm tổng hợp và đáp án</h2>
+  </div>
+
+  <p class="small">Làm bài trong 45 phút, không xem đáp án. Mỗi câu 1 điểm; dưới 30 điểm là chưa đạt, cần ôn lại chuyên đề tương ứng. Đáp án in ở cuối phần, sau khi hết 40 câu.</p>
+
+  <h3>Chuyên đề 1 — Lịch sử Đảng (câu 1–8)</h3>
+  <div class="q"><div class="stem">Câu 1. Đảng Cộng sản Việt Nam được thành lập ngày</div>
+    <div class="opts"><div>A. 6/1/1930</div><div>B. 3/2/1930</div><div>C. 24/2/1930</div><div>D. 2/3/1930</div></div></div>
+  <div class="q"><div class="stem">Câu 2. Hội nghị hợp nhất các tổ chức cộng sản họp tại</div>
+    <div class="opts"><div>A. Pác Bó (Cao Bằng)</div><div>B. Ma Cao (Trung Quốc)</div><div>C. Cửu Long, Hương Cảng</div><div>D. Tuyên Quang</div></div></div>
+  <div class="q"><div class="stem">Câu 3. Người chủ trì Hội nghị thành lập Đảng là</div>
+    <div class="opts"><div>A. Trần Phú</div><div>B. Lê Hồng Phong</div><div>C. Nguyễn Ái Quốc</div><div>D. Hà Huy Tập</div></div></div>
+  <div class="q"><div class="stem">Câu 4. Đại hội đại biểu toàn quốc nào khởi xướng đường lối đổi mới?</div>
+    <div class="opts"><div>A. Đại hội V (1982)</div><div>B. Đại hội VI (1986)</div><div>C. Đại hội VII (1991)</div><div>D. Đại hội VIII (1996)</div></div></div>
+  <div class="q"><div class="stem">Câu 5. Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội lần đầu được thông qua tại</div>
+    <div class="opts"><div>A. Đại hội VI</div><div>B. Đại hội VII</div><div>C. Đại hội VIII</div><div>D. Đại hội XI</div></div></div>
+  <div class="q"><div class="stem">Câu 6. Đại hội nào quyết định đổi tên Đảng thành Đảng Cộng sản Việt Nam?</div>
+    <div class="opts"><div>A. Đại hội III (1960)</div><div>B. Đại hội IV (1976)</div><div>C. Đại hội V (1982)</div><div>D. Đại hội VI (1986)</div></div></div>
+  <div class="q"><div class="stem">Câu 7. Chiến thắng Điện Biên Phủ diễn ra ngày</div>
+    <div class="opts"><div>A. 7/5/1954</div><div>B. 21/7/1954</div><div>C. 2/9/1945</div><div>D. 30/4/1975</div></div></div>
+  <div class="q"><div class="stem">Câu 8. Đại hội đại biểu toàn quốc lần thứ XIV tiến hành vào tháng</div>
+    <div class="opts"><div>A. 1/2021</div><div>B. 12/2025</div><div>C. 1/2026</div><div>D. 4/2026</div></div></div>
+
+  <h3>Chuyên đề 2 — Cương lĩnh (câu 9–16)</h3>
+  <div class="q"><div class="stem">Câu 9. Cương lĩnh đang áp dụng được thông qua tại Đại hội XI, năm</div>
+    <div class="opts"><div>A. 2006</div><div>B. 2011</div><div>C. 2016</div><div>D. 2021</div></div></div>
+  <div class="q"><div class="stem">Câu 10. Cương lĩnh 2011 nêu bao nhiêu đặc trưng của xã hội xã hội chủ nghĩa?</div>
+    <div class="opts"><div>A. 6</div><div>B. 7</div><div>C. 8</div><div>D. 12</div></div></div>
+  <div class="q"><div class="stem">Câu 11. Đặc trưng đầu tiên của xã hội xã hội chủ nghĩa là</div>
+    <div class="opts"><div>A. Dân giàu, nước mạnh, dân chủ, công bằng, văn minh</div><div>B. Do nhân dân làm chủ</div><div>C. Có nền kinh tế phát triển cao</div><div>D. Có Nhà nước pháp quyền</div></div></div>
+  <div class="q"><div class="stem">Câu 12. Cương lĩnh 2011 nêu bao nhiêu phương hướng cơ bản?</div>
+    <div class="opts"><div>A. 6</div><div>B. 8</div><div>C. 10</div><div>D. 12</div></div></div>
+  <div class="q"><div class="stem">Câu 13. Cương lĩnh 2011 nêu bao nhiêu quan hệ lớn cần nắm vững và giải quyết?</div>
+    <div class="opts"><div>A. 6</div><div>B. 8</div><div>C. 9</div><div>D. 12</div></div></div>
+  <div class="q"><div class="stem">Câu 14. Mục tiêu đến năm 2045 của nước ta là</div>
+    <div class="opts"><div>A. Nước công nghiệp hiện đại</div><div>B. Nước đang phát triển, thu nhập trung bình cao</div><div>C. Nước phát triển, thu nhập cao</div><div>D. Nước có thu nhập trung bình thấp</div></div></div>
+  <div class="q"><div class="stem">Câu 15. Nội dung nào <b>không</b> thuộc ba đột phá chiến lược?</div>
+    <div class="opts"><div>A. Hoàn thiện thể chế</div><div>B. Phát triển nguồn nhân lực</div><div>C. Xây dựng kết cấu hạ tầng</div><div>D. Tăng cường quốc phòng, an ninh</div></div></div>
+  <div class="q"><div class="stem">Câu 16. Theo Văn kiện Đại hội XIV, mục tiêu GDP bình quân đầu người đến năm 2030 khoảng</div>
+    <div class="opts"><div>A. 4.500 USD</div><div>B. 6.000 USD</div><div>C. 8.500 USD</div><div>D. 12.000 USD</div></div></div>
+
+  <h3>Chuyên đề 3 — Điều lệ Đảng (câu 17–26)</h3>
+  <div class="q"><div class="stem">Câu 17. Điều lệ Đảng hiện hành được thông qua tại</div>
+    <div class="opts"><div>A. Đại hội X</div><div>B. Đại hội XI</div><div>C. Đại hội XIII</div><div>D. Đại hội XIV</div></div></div>
+  <div class="q"><div class="stem">Câu 18. Điều lệ Đảng hiện hành gồm</div>
+    <div class="opts"><div>A. 10 chương, 40 điều</div><div>B. 11 chương, 48 điều</div><div>C. 12 chương, 48 điều</div><div>D. 12 chương, 50 điều</div></div></div>
+  <div class="q"><div class="stem">Câu 19. Công dân Việt Nam từ bao nhiêu tuổi trở lên có thể được xét kết nạp vào Đảng?</div>
+    <div class="opts"><div>A. 16 tuổi</div><div>B. 17 tuổi</div><div>C. 18 tuổi</div><div>D. 20 tuổi</div></div></div>
+  <div class="q"><div class="stem">Câu 20. Nhiệm vụ của đảng viên được quy định tại</div>
+    <div class="opts"><div>A. Điều 1</div><div>B. Điều 2</div><div>C. Điều 3</div><div>D. Điều 9</div></div></div>
+  <div class="q"><div class="stem">Câu 21. Quyền của đảng viên được quy định tại</div>
+    <div class="opts"><div>A. Điều 2</div><div>B. Điều 3</div><div>C. Điều 4</div><div>D. Điều 5</div></div></div>
+  <div class="q"><div class="stem">Câu 22. Đảng tổ chức và hoạt động theo nguyên tắc</div>
+    <div class="opts"><div>A. Tập trung dân chủ</div><div>B. Dân chủ trực tiếp</div><div>C. Tự quản ở cơ sở</div><div>D. Phân quyền triệt để</div></div></div>
+  <div class="q"><div class="stem">Câu 23. Thời gian dự bị của đảng viên là</div>
+    <div class="opts"><div>A. 6 tháng</div><div>B. 12 tháng</div><div>C. 18 tháng</div><div>D. 24 tháng</div></div></div>
+  <div class="q"><div class="stem">Câu 24. Hình thức kỷ luật nặng nhất đối với đảng viên là</div>
+    <div class="opts"><div>A. Khiển trách</div><div>B. Cảnh cáo</div><div>C. Cách chức</div><div>D. Khai trừ</div></div></div>
+  <div class="q"><div class="stem">Câu 25. Các hình thức kỷ luật đối với tổ chức đảng là</div>
+    <div class="opts"><div>A. Khiển trách, cảnh cáo, giải tán</div><div>B. Khiển trách, cảnh cáo, khai trừ</div><div>C. Cảnh cáo, cách chức, giải tán</div><div>D. Khiển trách, cách chức, khai trừ</div></div></div>
+  <div class="q"><div class="stem">Câu 26. Quy định 207-QĐ/TW ngày 26/7/2026 quy định về</div>
+    <div class="opts"><div>A. 19 điều đảng viên không được làm</div><div>B. 46 điều thi hành Điều lệ Đảng</div><div>C. Năm nhóm nhiệm vụ học tập Bác</div><div>D. Quy chế bầu cử trong Đảng</div></div></div>
+
+  <h3>Chuyên đề 4 — Tư tưởng, đạo đức, phong cách Hồ Chí Minh (câu 27–33)</h3>
+  <div class="q"><div class="stem">Câu 27. Khái niệm tư tưởng Hồ Chí Minh được nêu tại Đại hội</div>
+    <div class="opts"><div>A. VII</div><div>B. VIII</div><div>C. IX</div><div>D. XI</div></div></div>
+  <div class="q"><div class="stem">Câu 28. Có bao nhiêu chuẩn mực đạo đức Hồ Chí Minh?</div>
+    <div class="opts"><div>A. 3</div><div>B. 4</div><div>C. 5</div><div>D. 6</div></div></div>
+  <div class="q"><div class="stem">Câu 29. “Cần, kiệm, liêm, chính, chí công vô tư” thuộc</div>
+    <div class="opts"><div>A. Phong cách làm việc</div><div>B. Chuẩn mực đạo đức</div><div>C. Nguyên tắc tổ chức</div><div>D. Nhiệm vụ của đảng viên</div></div></div>
+  <div class="q"><div class="stem">Câu 30. Chỉ thị 07-CT/TW về học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh ban hành ngày</div>
+    <div class="opts"><div>A. 15/5/2016</div><div>B. 8/4/2026</div><div>C. 19/5/2026</div><div>D. 13/7/2026</div></div></div>
+  <div class="q"><div class="stem">Câu 31. Chỉ thị 05-CT/TW về đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh ban hành năm</div>
+    <div class="opts"><div>A. 2011</div><div>B. 2016</div><div>C. 2021</div><div>D. 2026</div></div></div>
+  <div class="q"><div class="stem">Câu 32. Phong cách Hồ Chí Minh thường được trình bày thành mấy loại?</div>
+    <div class="opts"><div>A. 3</div><div>B. 4</div><div>C. 5</div><div>D. 6</div></div></div>
+  <div class="q"><div class="stem">Câu 33. “Trung với nước, hiếu với dân” là nội dung thuộc</div>
+    <div class="opts"><div>A. Tinh thần quốc tế</div><div>B. Chuẩn mực đạo đức</div><div>C. Phong cách diễn đạt</div><div>D. Nguyên tắc tập trung dân chủ</div></div></div>
+
+  <h3>Chuyên đề 5 — Phấn đấu trở thành đảng viên (câu 34–37)</h3>
+  <div class="q"><div class="stem">Câu 34. Với người chưa phải đảng viên, bước đầu tiên trong quá trình phấn đấu vào Đảng là</div>
+    <div class="opts"><div>A. Viết đơn xin vào Đảng</div><div>B. Học lớp bồi dưỡng nhận thức về Đảng</div><div>C. Tìm hai đảng viên giới thiệu</div><div>D. Tổ chức lễ kết nạp</div></div></div>
+  <div class="q"><div class="stem">Câu 35. Người vào Đảng cần được bao nhiêu đảng viên chính thức giới thiệu?</div>
+    <div class="opts"><div>A. 1</div><div>B. 2</div><div>C. 3</div><div>D. 5</div></div></div>
+  <div class="q"><div class="stem">Câu 36. Đảng viên dự bị <b>không</b> có quyền nào sau đây?</div>
+    <div class="opts"><div>A. Sinh hoạt chi bộ</div><div>B. Đóng đảng phí</div><div>C. Biểu quyết, ứng cử, bầu cử</div><div>D. Tự phê bình và phê bình</div></div></div>
+  <div class="q"><div class="stem">Câu 37. Bài thu hoạch cuối khóa thường được trình bày theo mấy phần?</div>
+    <div class="opts"><div>A. 2 phần</div><div>B. 3 phần</div><div>C. 4 phần</div><div>D. 5 phần</div></div></div>
+
+  <h3>Phần địa phương — Gia Lai (câu 38–40)</h3>
+  <div class="q"><div class="stem">Câu 38. Diện tích tỉnh Gia Lai sau khi hợp nhất với tỉnh Bình Định là</div>
+    <div class="opts"><div>A. 15.510 km²</div><div>B. 18.096 km²</div><div>C. 21.576,53 km²</div><div>D. 24.232 km²</div></div></div>
+  <div class="q"><div class="stem">Câu 39. Trung tâm chính trị - hành chính của tỉnh Gia Lai sau hợp nhất đặt tại</div>
+    <div class="opts"><div>A. Thành phố Pleiku</div><div>B. Thành phố Quy Nhơn</div><div>C. Thị xã An Khê</div><div>D. Thị xã Ayun Pa</div></div></div>
+  <div class="q"><div class="stem">Câu 40. Tốc độ tăng trưởng GRDP của tỉnh Gia Lai năm 2025 đạt</div>
+    <div class="opts"><div>A. 6,1%</div><div>B. 7,2%</div><div>C. 8,5%</div><div>D. 10,5%</div></div></div>
+
+  <h3>Đáp án</h3>
+  <div class="box green">
+    <div class="label green">Bảng đáp án</div>
+    <table class="t" style="margin:4px 0 0">
+      <tr><th class="c">1</th><th class="c">2</th><th class="c">3</th><th class="c">4</th><th class="c">5</th><th class="c">6</th><th class="c">7</th><th class="c">8</th><th class="c">9</th><th class="c">10</th></tr>
+      <tr><td class="c"><b>B</b></td><td class="c"><b>C</b></td><td class="c"><b>C</b></td><td class="c"><b>B</b></td><td class="c"><b>B</b></td><td class="c"><b>B</b></td><td class="c"><b>A</b></td><td class="c"><b>C</b></td><td class="c"><b>B</b></td><td class="c"><b>C</b></td></tr>
+      <tr><th class="c">11</th><th class="c">12</th><th class="c">13</th><th class="c">14</th><th class="c">15</th><th class="c">16</th><th class="c">17</th><th class="c">18</th><th class="c">19</th><th class="c">20</th></tr>
+      <tr><td class="c"><b>A</b></td><td class="c"><b>B</b></td><td class="c"><b>B</b></td><td class="c"><b>C</b></td><td class="c"><b>D</b></td><td class="c"><b>C</b></td><td class="c"><b>B</b></td><td class="c"><b>C</b></td><td class="c"><b>C</b></td><td class="c"><b>B</b></td></tr>
+      <tr><th class="c">21</th><th class="c">22</th><th class="c">23</th><th class="c">24</th><th class="c">25</th><th class="c">26</th><th class="c">27</th><th class="c">28</th><th class="c">29</th><th class="c">30</th></tr>
+      <tr><td class="c"><b>B</b></td><td class="c"><b>A</b></td><td class="c"><b>B</b></td><td class="c"><b>D</b></td><td class="c"><b>A</b></td><td class="c"><b>A</b></td><td class="c"><b>C</b></td><td class="c"><b>B</b></td><td class="c"><b>B</b></td><td class="c"><b>D</b></td></tr>
+      <tr><th class="c">31</th><th class="c">32</th><th class="c">33</th><th class="c">34</th><th class="c">35</th><th class="c">36</th><th class="c">37</th><th class="c">38</th><th class="c">39</th><th class="c">40</th></tr>
+      <tr><td class="c"><b>B</b></td><td class="c"><b>C</b></td><td class="c"><b>B</b></td><td class="c"><b>B</b></td><td class="c"><b>B</b></td><td class="c"><b>C</b></td><td class="c"><b>C</b></td><td class="c"><b>C</b></td><td class="c"><b>B</b></td><td class="c"><b>B</b></td></tr>
+    </table>
+  </div>
+
+  <div class="box gold">
+    <div class="label gold">Tự chấm và xử lý kết quả</div>
+    <p><b>36–40 câu:</b> đã sẵn sàng, chỉ cần ôn lại phần Gia Lai và bài thu hoạch.<br>
+    <b>30–35 câu:</b> ôn lại đúng chuyên đề có câu sai, làm lại sau 2 ngày.<br>
+    <b>Dưới 30 câu:</b> quay lại Phần A–B, học theo kế hoạch 7 ngày, không học tràn lan.<br>
+    Riêng câu 15, 18, 25, 36 là bốn câu “bẫy” hay gặp — sai bốn câu này thì phải đọc lại Điều lệ Đảng trước khi thi.</p>
+  </div>
+</section>
+
+<!-- ================= PART F ================= -->
+<section class="part" id="f">
+  <div class="part-head">
+    <div class="no">PHẦN F</div>
+    <h2>Đề cương và bài thu hoạch mẫu</h2>
+  </div>
+
+  <p>Theo khung của Hướng dẫn 61-HD/BTGTW, khóa học kết thúc bằng <b>bài thu hoạch</b> (khung 5 tiết). Bài thu hoạch không phải bài thi kiến thức thuần túy — người chấm tìm ba thứ: <b>nhận thức đúng</b>, <b>liên hệ thật</b>, <b>việc làm cụ thể</b>. Dưới đây là đề cương chi tiết và một bài mẫu để đối chiếu cách viết, không phải để chép.</p>
+
+  <h3>1. Đề cương chi tiết (dùng cho mọi đề thu hoạch)</h3>
+  <table class="t">
+    <thead><tr><th style="width:34mm">Phần</th><th>Nội dung</th><th style="width:22mm" class="c">Tỉ lệ</th></tr></thead>
+    <tbody>
+      <tr><td><b>Mở bài</b></td><td>Nêu lý do, phạm vi, cách tiếp cận. 5–7 dòng. Không dài dòng kể lể.</td><td class="c">10%</td></tr>
+      <tr><td><b>I. Nhận thức về Đảng</b></td><td>Sự ra đời và vai trò lãnh đạo; bản chất giai cấp công nhân; mục tiêu lý tưởng; truyền thống. Chọn 2–3 ý, phân tích sâu hơn là liệt kê cả bài 1.</td><td class="c">30%</td></tr>
+      <tr><td><b>II. Nhận thức về Bác</b></td><td>Một chuẩn mực đạo đức hoặc một kiểu phong cách, gắn với nghề giáo. Nêu dẫn chứng cụ thể.</td><td class="c">20%</td></tr>
+      <tr><td><b>III. Liên hệ bản thân</b></td><td>Thuận lợi, khó khăn; ưu điểm; <b>khuyết điểm có thật</b> và nguyên nhân. Đây là phần quyết định điểm.</td><td class="c">25%</td></tr>
+      <tr><td><b>IV. Phương hướng phấn đấu</b></td><td>3–5 việc làm, mỗi việc có: làm gì — ở đâu — khi nào — đo bằng gì.</td><td class="c">15%</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box red">
+    <div class="label">Ba lỗi làm mất điểm</div>
+    <p><b>1.</b> Phần liên hệ chỉ toàn ưu điểm — người chấm biết ngay là viết cho xong.<br>
+    <b>2.</b> Phương hướng toàn động từ rỗng: “tiếp tục nâng cao”, “không ngừng phấn đấu”, “luôn luôn gương mẫu”.<br>
+    <b>3.</b> Chép nguyên văn tài liệu ở phần nhận thức, không có một câu nào là của mình.</p>
+  </div>
+
+  <h3>2. Bài thu hoạch mẫu (khoảng 1.400 từ)</h3>
+  <div class="box" style="border-left-color:var(--gold); background:#fffdf6">
+    <p class="small" style="margin-bottom:8px"><i>Ghi chú: bài dưới đây viết theo giọng của một giáo viên Hóa học tại Gia Lai, dùng làm mẫu về cách triển khai ý và cách liên hệ. Khi làm bài thật, phải thay bằng chi tiết của chính mình — người chấm đọc nhiều bài nên nhận ra ngay bài chép.</i></p>
+
+    <p><b>BÀI THU HOẠCH</b><br>
+    <span class="small">Học viên: Nguyễn Tuấn Minh — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai</span></p>
+
+    <p><b>Mở bài.</b> Trong bảy ngày học tập chương trình bồi dưỡng nhận thức về Đảng, điều tôi mang về không phải một danh sách ngày tháng để học thuộc, mà là một cách nhìn lại công việc mình đã làm mười năm nay. Tôi chọn cách trình bày bài thu hoạch theo hướng: hiểu Đảng để hiểu mình đang đứng ở đâu, rồi từ đó xác định việc phải làm.</p>
+
+    <p><b>I. Nhận thức về Đảng Cộng sản Việt Nam</b></p>
+    <p>Trước khóa học, tôi biết Đảng thành lập ngày 3/2/1930 tại Cửu Long, Hương Cảng, do Nguyễn Ái Quốc chủ trì. Nhưng phải đến khi học bài 1, tôi mới hiểu vì sao sự kiện ấy lại là bước ngoặt. Trước năm 1930, các phong trào yêu nước từ Cần Vương đến Duy Tân đều thất bại, không phải vì thiếu người hy sinh, mà vì thiếu một đường lối đúng và thiếu một tổ chức đủ sức tập hợp toàn dân. Ba tổ chức cộng sản ra đời năm 1929 cùng mục tiêu nhưng hoạt động riêng rẽ, tranh giành ảnh hưởng — nếu không hợp nhất được thì lực lượng sẽ tự làm yếu mình. Hội nghị tháng 3/1930 giải quyết đúng bài toán đó: thống nhất về tổ chức, thống nhất về đường lối, và quan trọng nhất là đặt nhiệm vụ giải phóng dân tộc lên trước.</p>
+    <p>Điều thứ hai tôi hiểu rõ hơn là <b>bản chất giai cấp công nhân</b> của Đảng không mâu thuẫn với việc Đảng là đội tiên phong của nhân dân lao động và của dân tộc. Đảng đứng trên lập trường của giai cấp công nhân, nhưng mục tiêu cuối cùng là giải phóng dân tộc, giải phóng con người. Chính vì vậy, trong suốt 96 năm, Đảng luôn gắn mục tiêu của mình với lợi ích của đại đa số nhân dân — từ giành độc lập năm 1945, thống nhất đất nước năm 1975, đến công cuộc đổi mới từ năm 1986.</p>
+    <p>Điều thứ ba, và với tôi là điều khó nhất, là <b>bài học về tự sửa mình</b>. Đảng không phải tổ chức không có sai sót; lịch sử cho thấy có những giai đoạn Đảng đã nhìn thẳng vào khuyết điểm của mình để điều chỉnh — như Đại hội VI năm 1986 khởi xướng đổi mới sau một thời kỳ khó khăn. Với một giáo viên, bài học này rất gần: dạy sai thì phải sửa, sửa trước học sinh, và sửa bằng cách làm khác đi chứ không bằng lời xin lỗi.</p>
+
+    <p><b>II. Nhận thức về tư tưởng, đạo đức, phong cách Hồ Chí Minh</b></p>
+    <p>Trong bốn chuẩn mực đạo đức, tôi chọn phân tích <b>“cần, kiệm, liêm, chính, chí công vô tư”</b> vì đây là chuẩn mực gần nhất với nghề dạy học và cũng dễ vi phạm nhất trong những việc rất nhỏ.</p>
+    <p><b>Cần</b> với giáo viên là soạn bài kỹ, chấm bài đúng hạn, không dạy qua loa vì mệt. <b>Kiệm</b> là tiết kiệm thời gian của học sinh — không kéo dài tiết học bằng những nội dung không cần thiết; là tiết kiệm tiền của nhà trường — không lãng phí hóa chất, thiết bị thí nghiệm. <b>Liêm</b> là không nhận những gì không thuộc về mình, kể cả những “món quà nhỏ” của phụ huynh trong mùa thi. <b>Chính</b> là nói đúng, đánh giá đúng năng lực học sinh, không thiên vị. <b>Chí công vô tư</b> là khi phân công công việc, chọn học sinh đi thi, hay xét thi đua, phải đặt lợi ích chung lên trước.</p>
+    <p>Về phong cách, tôi ấn tượng nhất với <b>phong cách làm việc khoa học và phong cách diễn đạt giản dị</b> của Bác. Bác viết cho nông dân hiểu, nói cho người nghe nhớ. Tôi đã từng dạy phần “cân bằng hóa học” bằng những thuật ngữ dài dòng và thấy học sinh gật gù mà không hiểu. Sau khi đọc lại cách Bác giải thích những vấn đề lớn bằng câu ngắn, tôi thử viết lại bài giảng đó bằng ví dụ về việc rót nước vào ly — và học sinh hiểu nhanh hơn hẳn. Đó là một thay đổi nhỏ nhưng thật.</p>
+
+    <p><b>III. Liên hệ bản thân</b></p>
+    <p><b>Thuận lợi:</b> tôi công tác ở trường có chi bộ hoạt động đều, được đồng nghiệp lớn tuổi chỉ dẫn; học sinh và phụ huynh cơ bản tin tưởng; bản thân có chuyên môn vững, nhiều năm dạy đội tuyển.</p>
+    <p><b>Khó khăn:</b> trường ở địa bàn còn khó khăn, nhiều học sinh là người dân tộc thiểu số, trình độ đầu vào không đều; thời gian dành cho công tác quần chúng còn ít vì khối lượng chuyên môn lớn.</p>
+    <p><b>Ưu điểm:</b> tôi dạy đúng chương trình, không bỏ tiết; chịu khó học hỏi, tự làm thiết bị dạy học; quan hệ với đồng nghiệp hòa nhã, không nói xấu sau lưng.</p>
+    <p><b>Khuyết điểm — và đây là phần tôi phải nói thật:</b> <i>Thứ nhất</i>, tôi còn ngại va chạm. Trong sinh hoạt chi bộ, khi thấy một việc chưa đúng, tôi thường im lặng hoặc góp ý rất nhẹ, vì sợ mất lòng. Điều này trái với yêu cầu tự phê bình và phê bình. Nguyên nhân là tôi coi trọng sự dễ chịu hơn là sự thẳng thắn. <i>Thứ hai</i>, tôi chưa thật sự “gắn bó với nhân dân” theo nghĩa làm công tác quần chúng: tôi dạy tốt trong lớp nhưng ít tham gia các hoạt động của địa phương, ít đến thăm gia đình học sinh khó khăn. <i>Thứ ba</i>, tôi có lúc dùng điện thoại trong giờ họp hoặc trong lúc học sinh làm bài — một biểu hiện nhỏ nhưng không gương mẫu.</p>
+    <p>Tôi nhận ra điểm chung của ba khuyết điểm này: đều là những việc nhỏ, dễ bào chữa, và đều liên quan đến việc đặt sự thoải mái của mình lên trước. Đó chính là biểu hiện của chủ nghĩa cá nhân mà bài 4 đã nêu.</p>
+
+    <p><b>IV. Phương hướng phấn đấu</b></p>
+    <p>Tôi xác định bốn việc, có thời hạn và cách đo:</p>
+    <p><b>1.</b> Trong 3 tháng tới, mỗi kỳ sinh hoạt chi bộ tôi phát biểu ít nhất một ý kiến góp ý thẳng thắn, có ghi chép lại để tự kiểm tra. Đo bằng sổ ghi chép sinh hoạt chi bộ.</p>
+    <p><b>2.</b> Trong năm học 2026–2027, xây dựng 01 chuyên đề dạy học tích hợp giáo dục địa phương gắn với Hóa học (phân bón và canh tác bền vững ở Gia Lai), có phiếu học tập và sản phẩm học sinh; báo cáo trước tổ chuyên môn.</p>
+    <p><b>3.</b> Mỗi học kỳ, đến thăm ít nhất 03 gia đình học sinh có hoàn cảnh khó khăn, phối hợp với giáo viên chủ nhiệm và Đoàn trường; ghi lại danh sách và kết quả hỗ trợ.</p>
+    <p><b>4.</b> Không sử dụng điện thoại trong giờ lên lớp và giờ họp; nếu vi phạm, tự ghi vào sổ và báo cáo chi bộ. Đây là việc nhỏ nhưng tôi chọn vì nó đo được.</p>
+    <p>Tôi hiểu rằng phấn đấu vào Đảng không phải để có thêm một chức danh, mà là để có thêm kỷ luật và thêm trách nhiệm. Bốn việc trên chưa lớn, nhưng đều là việc tôi có thể làm và có thể kiểm tra được. Tôi mong được chi bộ, đồng nghiệp và học sinh giám sát.</p>
+  </div>
+
+  <h3>3. Bản rút gọn 2 trang (dùng khi không đủ thời gian)</h3>
+  <ul class="kv">
+    <li><b>Mở bài:</b> 3 dòng — học được gì, viết theo hướng nào.</li>
+    <li><b>I:</b> 3 đoạn, mỗi đoạn một ý: bước ngoặt 1930; bản chất và mục tiêu; bài học tự sửa mình.</li>
+    <li><b>II:</b> 2 đoạn — một chuẩn mực (cần, kiệm, liêm, chính) + một phong cách (diễn đạt giản dị), mỗi ý kèm ví dụ dạy học.</li>
+    <li><b>III:</b> 4 gạch đầu dòng — thuận lợi, khó khăn, ưu điểm, <b>01 khuyết điểm thật + nguyên nhân</b>.</li>
+    <li><b>IV:</b> 3 việc, mỗi việc một dòng, có mốc thời gian.</li>
+    <li><b>Kết:</b> 2 dòng, không hứa hẹn chung chung.</li>
+  </ul>
+</section>
+
+<!-- ================= PART G ================= -->
+<section class="part" id="g">
+  <div class="part-head">
+    <div class="no">PHẦN G</div>
+    <h2>Dự đoán đề tổng kết khóa và lộ trình làm dần</h2>
+  </div>
+
+  <div class="box red">
+    <div class="label">Đọc trước</div>
+    <p>Đây là <b>dự đoán dựa trên khung chương trình</b> (Hướng dẫn 61-HD/BTGTW: 5 bài, kết thúc bằng bài thu hoạch) và cách ra đề phổ biến của các trung tâm chính trị, <b>không phải đề thật</b>. Hình thức cụ thể do trung tâm quyết định. Dùng bộ đề này để luyện tay và quen nhịp, không học tủ.</p>
+  </div>
+
+  <h3>1. Ba hình thức tổng kết thường gặp</h3>
+  <table class="t">
+    <thead><tr><th style="width:44mm">Hình thức</th><th>Đặc điểm</th><th style="width:18mm" class="c">Khả năng</th></tr></thead>
+    <tbody>
+      <tr><td><b>Bài thu hoạch</b></td><td>Viết tại lớp, khung 5 tiết (khoảng 3–5 trang), chấm theo nội dung và liên hệ thực tế. Phổ biến nhất.</td><td class="c">Cao</td></tr>
+      <tr><td><b>Tự luận 2–3 câu</b></td><td>90–120 phút, mỗi câu 3–4 điểm, thường có 1 câu lý thuyết + 1 câu liên hệ.</td><td class="c">Trung bình</td></tr>
+      <tr><td><b>Trắc nghiệm + tự luận</b></td><td>20–30 câu trắc nghiệm (30–40 phút) + 1 câu tự luận ngắn. Một số trung tâm dùng để kiểm tra kiến thức.</td><td class="c">Thấp hơn</td></tr>
+    </tbody>
+  </table>
+
+  <h3>2. Ma trận dự đoán theo chủ đề</h3>
+  <table class="t">
+    <thead><tr><th style="width:38mm">Chủ đề</th><th>Dạng câu hay ra</th><th style="width:18mm" class="c">Xác suất</th><th style="width:20mm" class="c">Ôn ở</th></tr></thead>
+    <tbody>
+      <tr><td>Liên hệ bản thân + phương hướng phấn đấu</td><td>Luôn có, ở mọi đề. Thường chiếm 40–50% điểm.</td><td class="c">Gần như chắc</td><td class="c">F, C5</td></tr>
+      <tr><td>Nhiệm vụ — quyền của đảng viên</td><td>“Phân tích nhiệm vụ và quyền; liên hệ xây dựng chi bộ”</td><td class="c">Cao</td><td class="c">C3</td></tr>
+      <tr><td>Tư tưởng, đạo đức, phong cách HCM</td><td>“Bốn chuẩn mực đạo đức; vận dụng vào đạo đức nhà giáo”</td><td class="c">Cao</td><td class="c">C4</td></tr>
+      <tr><td>Đặc trưng, phương hướng của Cương lĩnh</td><td>“Trình bày 8 đặc trưng; trách nhiệm giáo viên với mục tiêu 2030–2045”</td><td class="c">Trung bình</td><td class="c">C2</td></tr>
+      <tr><td>Ý nghĩa thành lập Đảng, bài học kinh nghiệm</td><td>“Ý nghĩa lịch sử 3/2/1930; vận dụng bài học vào công tác”</td><td class="c">Trung bình</td><td class="c">C1</td></tr>
+      <tr><td>Điều kiện, quy trình kết nạp, thời gian dự bị</td><td>“Trình bày quy trình; động cơ vào Đảng”</td><td class="c">Trung bình</td><td class="c">C5, C3</td></tr>
+      <tr><td>Liên hệ địa phương Gia Lai</td><td>“Vận dụng Nghị quyết Đại hội Đảng bộ tỉnh vào đơn vị”</td><td class="c">Thấp–TB</td><td class="c">D</td></tr>
+    </tbody>
+  </table>
+
+  <h3>3. Sáu đề dự đoán và dàn ý</h3>
+
+  <div class="box">
+    <div class="label">Đề 1 — Bài thu hoạch tổng hợp (xác suất cao nhất)</div>
+    <p><i>“Qua học tập chương trình bồi dưỡng nhận thức về Đảng, đồng chí hãy trình bày những nhận thức của bản thân về Đảng Cộng sản Việt Nam và về tư tưởng, đạo đức, phong cách Hồ Chí Minh; liên hệ với thực tiễn công tác và đề ra phương hướng phấn đấu của bản thân.”</i></p>
+    <p><b>Dàn ý:</b> Mở (5 dòng) → I. Nhận thức về Đảng: bước ngoặt 1930, bản chất và mục tiêu, bài học tự sửa mình (3 đoạn) → II. Nhận thức về Bác: một chuẩn mực + một phong cách, mỗi ý kèm ví dụ dạy học → III. Liên hệ: thuận lợi, khó khăn, ưu điểm, <b>01–02 khuyết điểm thật + nguyên nhân</b> → IV. Phương hướng: 3–4 việc có mốc thời gian → Kết (2 dòng).</p>
+    <p><b>Bài mẫu đầy đủ:</b> xem Phần F. <b>Thời gian luyện:</b> 120 phút, viết tay.</p>
+  </div>
+
+  <div class="box">
+    <div class="label gold">Đề 2 — Điều lệ Đảng và xây dựng chi bộ</div>
+    <p><i>“Phân tích những nội dung cơ bản của Điều lệ Đảng về nhiệm vụ và quyền của đảng viên. Liên hệ trách nhiệm của bản thân trong việc xây dựng chi bộ, góp phần nâng cao năng lực lãnh đạo của tổ chức cơ sở đảng.”</i></p>
+    <p><b>Dàn ý:</b></p>
+    <ol>
+      <li><b>Mở:</b> vị trí Điều lệ — “luật gốc” của Đảng; hiện hành 12 chương, 48 điều, thông qua tại Đại hội XI.</li>
+      <li><b>Nhiệm vụ:</b> nêu 5 nhóm; phân tích sâu 2 nhóm gần nghề giáo — nhóm “học tập, rèn luyện, chống tiêu cực” và nhóm “gắn bó với nhân dân, làm công tác quần chúng”.</li>
+      <li><b>Quyền:</b> nêu 4 quyền; nhấn mạnh quyền phê bình, chất vấn và quyền được trình bày ý kiến, khiếu nại khi bị kỷ luật — đây là cơ chế bảo vệ chính đáng của đảng viên.</li>
+      <li><b>Quan hệ nhiệm vụ — quyền:</b> quyền để làm tròn nhiệm vụ, không phải để hưởng thụ; càng nhiều quyền càng nhiều trách nhiệm.</li>
+      <li><b>Liên hệ:</b> 3 việc — sinh hoạt chi bộ đều và phát biểu thật; góp ý xây dựng quy chế dân chủ ở cơ sở; giới thiệu, bồi dưỡng quần chúng ưu tú.</li>
+      <li><b>Kết:</b> chi bộ mạnh thì Đảng mạnh; mỗi đảng viên là một “viên gạch”.</li>
+    </ol>
+    <p><b>Lỗi dễ mắc:</b> chỉ liệt kê 5 nhiệm vụ, 4 quyền mà không phân tích; phần liên hệ nói về bản thân chung chung, không nói về chi bộ. <b>Thời gian:</b> 60 phút.</p>
+  </div>
+
+  <div class="box">
+    <div class="label gold">Đề 3 — Cương lĩnh và trách nhiệm của giáo viên</div>
+    <p><i>“Trình bày những đặc trưng cơ bản của xã hội xã hội chủ nghĩa và phương hướng xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội theo Cương lĩnh (bổ sung, phát triển năm 2011). Với vai trò giáo viên, đồng chí cần làm gì để góp phần thực hiện mục tiêu đến năm 2030, tầm nhìn 2045?”</i></p>
+    <p><b>Dàn ý:</b></p>
+    <ol>
+      <li><b>Mở:</b> Cương lĩnh 1991 và bản bổ sung 2011 — “bản đồ” của con đường đi lên.</li>
+      <li><b>Đặc trưng:</b> nêu đủ 8, sau đó <b>chọn 2 để phân tích</b> — “dân giàu, nước mạnh, dân chủ, công bằng, văn minh” và “con người có cuộc sống ấm no, tự do, hạnh phúc, phát triển toàn diện”.</li>
+      <li><b>Phương hướng:</b> nhóm 8 phương hướng thành 3 cụm — kinh tế (công nghiệp hóa, kinh tế thị trường); văn hóa – xã hội – con người; Nhà nước – Đảng – đối ngoại – quốc phòng.</li>
+      <li><b>Mục tiêu:</b> 2030 là nước đang phát triển có công nghiệp hiện đại, thu nhập trung bình cao; 2045 là nước phát triển, thu nhập cao. Ba đột phá chiến lược, trong đó nguồn nhân lực là đột phá — <b>và đó chính là việc của giáo viên</b>.</li>
+      <li><b>Liên hệ:</b> 3 việc — nâng chất lượng dạy học gắn với năng lực thực hành; hướng nghiệp cho học sinh theo ngành nghề của tỉnh (nông nghiệp công nghệ cao, chế biến, du lịch, năng lượng tái tạo); giáo dục đạo đức, kỹ năng sống.</li>
+      <li><b>Kết:</b> mục tiêu 2045 không làm được bằng khẩu hiệu mà bằng từng lớp học sinh hôm nay.</li>
+    </ol>
+    <p><b>Lỗi dễ mắc:</b> chép đủ 8 đặc trưng mà không phân tích cái nào; phần liên hệ không gắn với “nguồn nhân lực”. <b>Thời gian:</b> 60 phút.</p>
+  </div>
+
+  <div class="box">
+    <div class="label gold">Đề 4 — Bốn chuẩn mực đạo đức và đạo đức nhà giáo</div>
+    <p><i>“Phân tích bốn chuẩn mực đạo đức Hồ Chí Minh. Vận dụng vào việc rèn luyện đạo đức nhà giáo trong giai đoạn hiện nay.”</i></p>
+    <p><b>Dàn ý:</b></p>
+    <ol>
+      <li><b>Mở:</b> đạo đức là gốc — “có tài mà không có đức là người vô dụng”.</li>
+      <li><b>Bốn chuẩn mực:</b> trung với nước, hiếu với dân; cần, kiệm, liêm, chính, chí công vô tư; yêu thương con người, sống có nghĩa có tình; tinh thần quốc tế trong sáng. Mỗi chuẩn mực 3–4 dòng, có ví dụ.</li>
+      <li><b>Vận dụng — 5 việc cụ thể:</b> (a) trung thực trong đánh giá học sinh; (b) không nhận quà, không dạy thêm trái quy định; (c) tiết kiệm thời gian và vật tư của nhà trường; (d) yêu thương nhưng không bao che; (e) tôn trọng sự khác biệt văn hóa của học sinh dân tộc thiểu số.</li>
+      <li><b>Gắn với Chỉ thị 07-CT/TW (13/7/2026):</b> học đi đôi với làm, lấy kết quả công việc làm thước đo, nêu gương từ việc nhỏ.</li>
+      <li><b>Kết:</b> mỗi thầy cô là một tấm gương — nhưng gương phải sạch thì mới soi được.</li>
+    </ol>
+    <p><b>Lỗi dễ mắc:</b> phần vận dụng viết thành khẩu hiệu, không có việc nào kiểm tra được. <b>Thời gian:</b> 45 phút.</p>
+  </div>
+
+  <div class="box">
+    <div class="label gold">Đề 5 — Ý nghĩa thành lập Đảng và bài học kinh nghiệm</div>
+    <p><i>“Trình bày ý nghĩa lịch sử của sự kiện thành lập Đảng Cộng sản Việt Nam (3/2/1930). Phân tích một bài học kinh nghiệm của Đảng và vận dụng vào công tác giảng dạy, giáo dục học sinh.”</i></p>
+    <p><b>Dàn ý:</b></p>
+    <ol>
+      <li><b>Mở:</b> bối cảnh trước 1930 — khủng hoảng đường lối, ba tổ chức cộng sản riêng rẽ.</li>
+      <li><b>Ý nghĩa — 3 mặt:</b> (a) <i>đường lối</i>: có Cương lĩnh chính trị đầu tiên, chấm dứt khủng hoảng; (b) <i>tổ chức</i>: một Đảng duy nhất, tập trung, có kỷ luật; (c) <i>lực lượng</i>: tập hợp được công nhân, nông dân, trí thức, cả dân tộc — mở ra cao trào 1930–1931 và về sau là Cách mạng Tháng Tám.</li>
+      <li><b>Một bài học:</b> chọn “thường xuyên xây dựng, chỉnh đốn Đảng” hoặc “gắn bó với nhân dân” — phân tích: nội dung, vì sao đúng, phản chứng nếu làm sai.</li>
+      <li><b>Vận dụng vào dạy học:</b> dạy lịch sử Đảng không phải đọc ngày tháng mà chỉ ra <b>vì sao</b>; dùng di tích, nhân vật địa phương; rèn cho học sinh thói quen tự kiểm điểm như Đảng tự phê bình.</li>
+      <li><b>Kết:</b> hiểu lịch sử để không lặp lại sai lầm và không đánh mất thành quả.</li>
+    </ol>
+    <p><b>Lỗi dễ mắc:</b> kể lể sự kiện dài dòng, hết giờ mà chưa vào phần vận dụng. <b>Thời gian:</b> 45 phút.</p>
+  </div>
+
+  <div class="box">
+    <div class="label gold">Đề 6 — Tổng hợp 3 câu, 90 phút</div>
+    <p><i>Câu 1 (4 điểm): Trình bày điều kiện, tiêu chuẩn của người vào Đảng và quy trình kết nạp đảng viên.<br>
+    Câu 2 (3 điểm): Phân tích nội dung cơ bản của tư tưởng Hồ Chí Minh về đạo đức; liên hệ bản thân.<br>
+    Câu 3 (3 điểm): Vận dụng Nghị quyết Đại hội Đảng bộ tỉnh Gia Lai lần thứ I vào công tác giáo dục tại đơn vị.</i></p>
+    <p><b>Gợi ý phân bổ thời gian:</b> Câu 1 — 30 phút (đủ 5 bước, có thời gian dự bị 12 tháng); Câu 2 — 30 phút (4 chuẩn mực, chọn 1 phân tích); Câu 3 — 25 phút (3 chỉ tiêu + 2 việc làm); còn 5 phút đọc lại.</p>
+    <p><b>Lỗi dễ mắc:</b> câu 1 sa vào kể chuyện, thiếu bước; câu 3 nói chung về cả nước, không nói Gia Lai. <b>Thời gian:</b> 90 phút.</p>
+  </div>
+
+  <h3>4. Lộ trình làm dần 7 ngày</h3>
+  <table class="t">
+    <thead><tr><th style="width:24mm">Ngày</th><th>Việc làm</th><th style="width:18mm" class="c">Thời gian</th><th style="width:36mm">Sản phẩm</th></tr></thead>
+    <tbody>
+      <tr><td><b>CN 15/11</b></td><td>Đề 1 — viết đầy đủ, viết tay, không mở tài liệu</td><td class="c">120 phút</td><td>Bài 3–4 trang</td></tr>
+      <tr><td><b>T2 16/11</b></td><td>Đề 2 — Điều lệ và xây dựng chi bộ</td><td class="c">60 phút</td><td>Bài 2 trang</td></tr>
+      <tr><td><b>T3 17/11</b></td><td>Đề 3 — Cương lĩnh và trách nhiệm giáo viên</td><td class="c">60 phút</td><td>Bài 2 trang</td></tr>
+      <tr><td><b>T4 18/11</b></td><td>Đề 4 — Bốn chuẩn mực đạo đức</td><td class="c">45 phút</td><td>Bài 1,5 trang</td></tr>
+      <tr><td><b>T5 19/11</b></td><td>Đề 5 — Ý nghĩa thành lập Đảng, bài học</td><td class="c">45 phút</td><td>Bài 1,5 trang</td></tr>
+      <tr><td><b>T6 20/11</b></td><td>Đề 6 — tổng hợp 3 câu, bấm giờ như thi thật</td><td class="c">90 phút</td><td>Bài 2,5 trang</td></tr>
+      <tr><td><b>T7 21/11</b></td><td>Viết lại Đề 1 lần 2; so với bản ngày 15/11, gạch bỏ mọi câu sáo</td><td class="c">90 phút</td><td>Bản hoàn chỉnh</td></tr>
+      <tr><td><b>CN 22/11</b></td><td>Chỉ đọc lại dàn ý 6 đề, không viết</td><td class="c">30 phút</td><td>Sẵn sàng</td></tr>
+    </tbody>
+  </table>
+
+  <h3>5. Bảng tự chấm (thang 10)</h3>
+  <table class="t">
+    <thead><tr><th style="width:52mm">Tiêu chí</th><th>Mức đạt</th><th style="width:14mm" class="c">Điểm</th></tr></thead>
+    <tbody>
+      <tr><td><b>Nhận thức đúng, đủ</b></td><td>Nêu đúng khái niệm, con số, mốc; không sai bản chất; không lẫn văn bản cũ với văn bản mới</td><td class="c">4</td></tr>
+      <tr><td><b>Liên hệ thật</b></td><td>Có ít nhất một khuyết điểm thật và nguyên nhân; có chi tiết chỉ mình mới viết được</td><td class="c">3</td></tr>
+      <tr><td><b>Việc làm cụ thể</b></td><td>Mỗi phương hướng trả lời được: làm gì — ở đâu — khi nào — đo bằng gì</td><td class="c">2</td></tr>
+      <tr><td><b>Trình bày</b></td><td>Bố cục rõ, chữ đọc được, không sai chính tả, đúng thời gian</td><td class="c">1</td></tr>
+    </tbody>
+  </table>
+  <div class="box gold">
+    <div class="label gold">Cách tự chấm nhanh</div>
+    <p>Đọc to bài của mình. Chỗ nào đọc mà thấy trơn quá, không có thông tin gì mới — gạch. Chỗ nào có số liệu, tên việc, mốc thời gian — giữ. Sau khi gạch, nếu bài còn dưới 2 trang thì phần liên hệ đang quá mỏng.</p>
+  </div>
+
+  <h3>6. Năm câu mở bài dùng được ngay</h3>
+  <ol class="kv">
+    <li>“Trong bảy ngày học tập, điều tôi mang về không phải một danh sách ngày tháng, mà là cách nhìn lại công việc mình đã làm.”</li>
+    <li>“Trước khóa học, tôi biết Đảng thành lập ngày 3/2/1930. Sau khóa học, tôi hiểu vì sao ngày ấy là bước ngoặt.”</li>
+    <li>“Có những điều tôi đã làm đúng mười năm nay mà không biết gọi tên; khóa học này giúp tôi gọi đúng tên nó.”</li>
+    <li>“Bài thu hoạch này tôi viết cho chính mình, nên xin phép được nói thẳng cả phần chưa làm được.”</li>
+    <li>“Nếu chỉ được giữ một điều sau khóa học, tôi giữ điều này: người đảng viên phải chịu kỷ luật cao hơn, chứ không phải có quyền nhiều hơn.”</li>
+  </ol>
+</section>
+
+<!-- ================= PART H ================= -->
+<section class="part" id="h">
+  <div class="part-head">
+    <div class="no">PHẦN H</div>
+    <h2>Checklist trước — trong — sau lớp</h2>
+  </div>
+
+  <div class="two">
+    <div class="box red">
+      <div class="label">Trước khi vào lớp</div>
+      <ul class="check">
+        <li>Giấy chứng minh nhân dân / căn cước (bản gốc)</li>
+        <li>Giấy triệu tập hoặc danh sách học viên của lớp</li>
+        <li>Sổ ghi chép riêng, 2 bút (một bút mực, một bút dạ quang)</li>
+        <li>Bản in sổ tay này (Phần A–F) để đối chiếu</li>
+        <li>Trang phục lịch sự, gọn gàng; đi sớm 15 phút</li>
+        <li>Điện thoại để chế độ im lặng, không dùng trong giờ học</li>
+      </ul>
+    </div>
+    <div class="box gold">
+      <div class="label gold">Trong lớp</div>
+      <ul class="check">
+        <li>Ghi theo 3 cột: ý chính — chi tiết — liên hệ bản thân</li>
+        <li>Đánh dấu “?” chỗ chưa hiểu, hỏi ngay khi giảng viên dừng</li>
+        <li>Ghi đúng số hiệu văn bản mới (20-QĐ/TW, 01-HD/TW, 207-QĐ/TW, 07-CT/TW)</li>
+        <li>Không ghi âm, chụp tài liệu khi chưa được phép</li>
+        <li>Tham gia thảo luận ít nhất 1 lần mỗi ngày</li>
+        <li>Ghi lại tên, đơn vị của 2–3 học viên để trao đổi sau</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="two">
+    <div class="box green">
+      <div class="label green">Sau mỗi buổi</div>
+      <ul class="check">
+        <li>Gấp tài liệu, viết 5 dòng tóm tắt không nhìn sách</li>
+        <li>Làm 5–10 câu trắc nghiệm của đúng chuyên đề đó</li>
+        <li>Ghi 1 việc làm cụ thể có thể đưa vào bài thu hoạch</li>
+        <li>Đọc lại phần đã đánh dấu “?” và tìm câu trả lời</li>
+      </ul>
+    </div>
+    <div class="box gray">
+      <div class="label gray">Trước khi viết thu hoạch</div>
+      <ul class="check">
+        <li>Chọn sẵn 1–2 khuyết điểm thật, có nguyên nhân</li>
+        <li>Chuẩn bị 3 việc làm có mốc thời gian và cách đo</li>
+        <li>Không chép bài mẫu; chỉ dùng để đối chiếu cách viết</li>
+        <li>Viết nháp trước, đọc to, gạch câu sáo</li>
+        <li>Kiểm tra lại các con số: 8–8–8, 12 chương 48 điều, 12 tháng dự bị</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="label">Mẹo phòng thi</div>
+    <table class="t" style="margin:4px 0 0">
+      <tr><td style="width:40mm"><b>Phân bổ thời gian</b></td><td>Chia giấy theo tỉ lệ điểm trước khi viết: câu 4 điểm viết 2 trang, câu 3 điểm viết 1,5 trang. Đừng để câu đầu “nuốt” hết giờ.</td></tr>
+      <tr><td><b>Khi không nhớ số liệu</b></td><td>Nói đúng bản chất, ghi “theo tài liệu của lớp” thay vì bịa con số. Sai số liệu bị trừ nặng hơn thiếu số liệu.</td></tr>
+      <tr><td><b>Khi đề hỏi “liên hệ”</b></td><td>Luôn trả lời theo 3 tầng: nhận thức (tôi hiểu gì) — thực trạng (tôi đang làm gì) — hành động (tôi sẽ làm gì, khi nào).</td></tr>
+      <tr><td><b>Khi bài đã dài</b></td><td>Đừng viết thêm ý mới; hãy làm sâu ý đã có bằng một ví dụ cụ thể. Ví dụ cụ thể luôn được điểm cao hơn ý mới chung chung.</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ================= PART P1 ================= -->
+<section class="part" id="p1">
+  <div class="part-head">
+    <div class="no">PHỤ LỤC 1</div>
+    <h2>30 dữ kiện không được quên</h2>
+  </div>
+
+  <p class="small">Đọc lướt mỗi tối 3 phút. Cột “ghi chú” là chỗ hay nhầm, không phải nội dung mới.</p>
+
+  <table class="t">
+    <thead><tr><th style="width:9mm" class="c">#</th><th style="width:62mm">Dữ kiện</th><th>Ghi chú / chỗ hay nhầm</th></tr></thead>
+    <tbody>
+      <tr><td class="c num">1</td><td>3/2/1930 — thành lập Đảng CSVN</td><td>Hội nghị họp từ 6/1/1930, kết thúc và tuyên bố thành lập ngày 3/2</td></tr>
+      <tr><td class="c num">2</td><td>96 năm lịch sử (1930–2026)</td><td>Tính đến 3/2/2026</td></tr>
+      <tr><td class="c num">3</td><td>14 kỳ đại hội</td><td>Đại hội XIV họp 19–23/1/2026</td></tr>
+      <tr><td class="c num">4</td><td>Điều lệ Đảng: 12 chương, 48 điều</td><td>Thông qua tại Đại hội XI (2011)</td></tr>
+      <tr><td class="c num">5</td><td>5 nhóm nhiệm vụ — 4 quyền của đảng viên</td><td>Nhiệm vụ Điều 2, quyền Điều 3</td></tr>
+      <tr><td class="c num">6</td><td>12 tháng — thời gian dự bị</td><td>Dự bị vẫn là đảng viên, chỉ chưa có quyền biểu quyết, ứng cử, bầu cử</td></tr>
+      <tr><td class="c num">7</td><td>18 tuổi — tuổi tối thiểu vào Đảng</td><td>Tính theo tuổi đời, không phải tuổi công tác</td></tr>
+      <tr><td class="c num">8</td><td>02 đảng viên chính thức giới thiệu</td><td>Phải có thời gian công tác cùng đơn vị theo quy định</td></tr>
+      <tr><td class="c num">9</td><td>4 hình thức kỷ luật đảng viên</td><td>Khiển trách — cảnh cáo — cách chức — khai trừ</td></tr>
+      <tr><td class="c num">10</td><td>3 hình thức kỷ luật tổ chức đảng</td><td>Khiển trách — cảnh cáo — giải tán</td></tr>
+      <tr><td class="c num">11</td><td>19 điều đảng viên không được làm</td><td>Quy định 207-QĐ/TW ngày 26/7/2026</td></tr>
+      <tr><td class="c num">12</td><td>46 điều — Quy định 20-QĐ/TW</td><td>Ngày 8/4/2026, thi hành Điều lệ Đảng</td></tr>
+      <tr><td class="c num">13</td><td>8 đặc trưng — 8 phương hướng — 8 quan hệ lớn</td><td>Bộ số của Cương lĩnh 2011</td></tr>
+      <tr><td class="c num">14</td><td>3 đột phá chiến lược</td><td>Thể chế — nguồn nhân lực — kết cấu hạ tầng</td></tr>
+      <tr><td class="c num">15</td><td>12 định hướng — 6 nhiệm vụ trọng tâm</td><td>Bộ số của văn kiện đại hội</td></tr>
+      <tr><td class="c num">16</td><td>2030: nước đang phát triển, công nghiệp hiện đại, thu nhập trung bình cao</td><td>Mốc giữa của lộ trình</td></tr>
+      <tr><td class="c num">17</td><td>2045: nước phát triển, thu nhập cao</td><td>Mốc dài hạn</td></tr>
+      <tr><td class="c num">18</td><td>GDP tăng từ 10%/năm trở lên, giai đoạn 2026–2030</td><td>Theo Văn kiện Đại hội XIV</td></tr>
+      <tr><td class="c num">19</td><td>GDP/người đến 2030 khoảng 8.500 USD</td><td>Theo Văn kiện Đại hội XIV</td></tr>
+      <tr><td class="c num">20</td><td>Đại hội XIV: 200 ủy viên BCH TW</td><td>180 chính thức + 20 dự khuyết</td></tr>
+      <tr><td class="c num">21</td><td>4 chuẩn mực đạo đức HCM</td><td>Trung — hiếu; cần, kiệm, liêm, chính; yêu thương; quốc tế</td></tr>
+      <tr><td class="c num">22</td><td>5 kiểu phong cách HCM</td><td>Tư duy — làm việc — diễn đạt — sinh hoạt — ứng xử</td></tr>
+      <tr><td class="c num">23</td><td>Khái niệm tư tưởng HCM nêu tại Đại hội IX (2001)</td><td>Không phải Đại hội VII</td></tr>
+      <tr><td class="c num">24</td><td>Chỉ thị 05-CT/TW (2016) → Kết luận 01-KL/TW (2021) → Chỉ thị 07-CT/TW (13/7/2026)</td><td>Dòng văn bản nối tiếp về học tập Bác</td></tr>
+      <tr><td class="c num">25</td><td>Gia Lai sau hợp nhất: 21.576,53 km²</td><td>Đứng thứ hai cả nước về diện tích</td></tr>
+      <tr><td class="c num">26</td><td>Dân số Gia Lai: 3.583.693 người</td><td>Trung tâm chính trị - hành chính: TP. Quy Nhơn</td></tr>
+      <tr><td class="c num">27</td><td>Nghị quyết 202/2025/QH15, hiệu lực 12/6/2025</td><td>Căn cứ pháp lý của việc hợp nhất</td></tr>
+      <tr><td class="c num">28</td><td>Đại hội Đảng bộ tỉnh lần thứ I: 2–4/10/2025</td><td>449/450 đại biểu; Bí thư Tỉnh ủy Thái Đại Ngọc</td></tr>
+      <tr><td class="c num">29</td><td>Mục tiêu Gia Lai 2030: GRDP 10–10,5%/năm; GRDP/người 6.300–6.500 USD; thu ngân sách trên 41.000 tỷ đồng; xuất khẩu trên 17 tỷ USD</td><td>Nguồn: Nghị quyết Đại hội Đảng bộ tỉnh</td></tr>
+      <tr><td class="c num">30</td><td>Gia Lai 2025: GRDP +7,2%; GRDP/người 85,05 triệu đồng; thu ngân sách trên 28.000 tỷ đồng; CPI +4,11%</td><td>Quy mô GRDP khoảng 270.700 tỷ đồng</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box red">
+    <div class="label">Ba mốc địa phương — nhớ kèm trạng thái</div>
+    <p><b>3/1930:</b> Chi bộ Cộng sản Nhà máy Đèn Quy Nhơn (5 đảng viên, Bí thư Lê Xuân Trữ).<br>
+    <b>1/10/1945:</b> Chi bộ Pleiku (9 đồng chí).<br>
+    <b>10/12/1945:</b> Đảng bộ tỉnh Gia Lai (phạm vi trước hợp nhất).<br>
+    <b>Đang lấy ý kiến:</b> mốc thành lập tổ chức Đảng đầu tiên và Đảng bộ tỉnh sau hợp nhất (lấy ý kiến từ 16/10 đến 10/11/2026; phương án đề xuất đầu 3/1930 và cuối 1937). <b>Chưa có kết luận chính thức</b> tại thời điểm biên soạn.</p>
+  </div>
+</section>
+
+<!-- ================= PART P2 ================= -->
+<section class="part" id="p2">
+  <div class="part-head">
+    <div class="no">PHỤ LỤC 2</div>
+    <h2>Văn bản gốc và nguồn kiểm chứng</h2>
+  </div>
+
+  <p>Danh mục dưới đây để tra cứu khi cần trích dẫn. Khi viết bài thu hoạch, chỉ cần trích <b>tên văn bản + ngày ban hành</b> là đủ; không cần chép số hiệu nếu không chắc.</p>
+
+  <h3>1. Văn bản về chương trình, tài liệu học</h3>
+  <table class="t">
+    <thead><tr><th style="width:60mm">Văn bản</th><th>Dùng cho</th></tr></thead>
+    <tbody>
+      <tr><td>Hướng dẫn 61-HD/BTGTW ngày 16/6/2022</td><td>Khung chương trình bồi dưỡng nhận thức về Đảng: 5 bài, 30 tiết giảng, 10 tiết thảo luận, 5 tiết báo cáo/tham quan, 5 tiết viết bài thu hoạch</td></tr>
+      <tr><td><i>Tài liệu bồi dưỡng nhận thức về Đảng</i>, xuất bản lần thứ 24</td><td>Tài liệu chính thức của lớp, đã cập nhật Văn kiện Đại hội XIV — <b>là chuẩn để đối chiếu</b></td></tr>
+    </tbody>
+  </table>
+
+  <h3>2. Văn bản của Đảng đang áp dụng</h3>
+  <table class="t">
+    <thead><tr><th style="width:60mm">Văn bản</th><th>Nội dung</th></tr></thead>
+    <tbody>
+      <tr><td>Điều lệ Đảng Cộng sản Việt Nam</td><td>Thông qua tại Đại hội XI (2011); 12 chương, 48 điều; Đại hội XIV không sửa, dự kiến sửa tại Đại hội XV</td></tr>
+      <tr><td>Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH</td><td>Bản 1991 (Đại hội VII) và bản bổ sung, phát triển 2011 (Đại hội XI)</td></tr>
+      <tr><td>Quy định 20-QĐ/TW ngày 8/4/2026</td><td>Thi hành Điều lệ Đảng, 46 điều</td></tr>
+      <tr><td>Hướng dẫn 01-HD/TW ngày 19/5/2026</td><td>Hướng dẫn thực hiện các quy định về công tác đảng viên</td></tr>
+      <tr><td>Quy định 19-QĐ/TW ngày 8/4/2026</td><td>Công tác chính trị - tư tưởng</td></tr>
+      <tr><td>Quy định 207-QĐ/TW ngày 26/7/2026</td><td>19 điều đảng viên không được làm</td></tr>
+      <tr><td>Chỉ thị 07-CT/TW ngày 13/7/2026</td><td>Đẩy mạnh học tập, làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh; 5 nhóm nhiệm vụ và tổ chức thực hiện</td></tr>
+      <tr><td>Chỉ thị 05-CT/TW ngày 15/5/2016; Kết luận 01-KL/TW ngày 18/5/2021</td><td>Các văn bản trước đó về học tập và làm theo Bác</td></tr>
+    </tbody>
+  </table>
+
+  <h3>3. Văn kiện đại hội</h3>
+  <ul>
+    <li>Văn kiện Đại hội đại biểu toàn quốc lần thứ XIII (1/2021) — mục tiêu 2030, tầm nhìn 2045, 3 đột phá chiến lược.</li>
+    <li>Văn kiện Đại hội đại biểu toàn quốc lần thứ XIV (1/2026) — mục tiêu tăng trưởng 2026–2030, các định hướng lớn.</li>
+    <li>Nghị quyết Đại hội đại biểu Đảng bộ tỉnh Gia Lai lần thứ I, nhiệm kỳ 2025–2030.</li>
+  </ul>
+
+  <h3>4. Nguồn số liệu địa phương</h3>
+  <ul>
+    <li>Nghị quyết 202/2025/QH15 của Quốc hội về sắp xếp đơn vị hành chính cấp tỉnh (hiệu lực 12/6/2025).</li>
+    <li>Cổng thông tin điện tử tỉnh Gia Lai và Báo Gia Lai — thông tin về Đại hội Đảng bộ tỉnh lần thứ I.</li>
+    <li>Thông tin công bố của Thông tấn xã Việt Nam (Infographics, 1/12/2025) về các chỉ tiêu phát triển tỉnh Gia Lai giai đoạn 2025–2030.</li>
+    <li>Báo cáo tình hình kinh tế - xã hội năm 2025 của tỉnh.</li>
+  </ul>
+
+  <h3>5. Nguyên tắc kiểm chứng đã áp dụng</h3>
+  <table class="t">
+    <thead><tr><th style="width:46mm">Nguyên tắc</th><th>Cách làm</th></tr></thead>
+    <tbody>
+      <tr><td>Ưu tiên văn bản gốc</td><td>Chỉ dùng số hiệu, ngày ban hành khi đã đối chiếu; không suy đoán nội dung văn bản chưa đọc</td></tr>
+      <tr><td>Tách “đã xác định” và “đang lấy ý kiến”</td><td>Các mốc lịch sử địa phương còn trong quá trình lấy ý kiến được ghi rõ trạng thái, không khẳng định thay cơ quan có thẩm quyền</td></tr>
+      <tr><td>Ghi nguồn khi số liệu chênh lệch</td><td>Ví dụ chỉ tiêu GRDP/người 2030 của Gia Lai: dùng mức 6.300–6.500 USD theo Nghị quyết Đại hội Đảng bộ tỉnh, có ghi chú về nguồn khác</td></tr>
+      <tr><td>Không trích văn bản đã hết hiệu lực mà không nói rõ</td><td>Các văn bản trước 2026 được ghi kèm năm ban hành để tránh nhầm với văn bản mới</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box gray">
+    <div class="label gray">Khi tài liệu lớp khác sổ tay này</div>
+    <p><b>Lấy tài liệu của lớp làm chuẩn.</b> Sổ tay này là bản tự biên soạn để học trước và ôn nhanh; giảng viên có thể dùng cách diễn đạt, cách nhóm ý hoặc số liệu cập nhật khác. Ghi lại chỗ khác biệt để hỏi trực tiếp — đó cũng là cách học tốt nhất.</p>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
