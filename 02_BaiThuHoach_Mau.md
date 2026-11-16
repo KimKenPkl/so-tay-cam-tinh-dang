@@ -7,7 +7,7 @@
 
     Học viên: Nguyễn Tuấn Minh — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai
 
-**Mở bài.** Trong bảy ngày học tập chương trình bồi dưỡng nhận thức về Đảng, điều tôi mang về không phải một danh sách ngày tháng để học thuộc, mà là một cách nhìn lại công việc mình đã làm mười năm nay. Tôi chọn cách trình bày bài thu hoạch theo hướng: hiểu Đảng để hiểu mình đang đứng ở đâu, rồi từ đó xác định việc phải làm.
+**Mở bài.** Trong năm ngày học tập chương trình bồi dưỡng nhận thức về Đảng, điều tôi mang về không phải một danh sách ngày tháng để học thuộc, mà là một cách nhìn lại công việc mình đã làm mười năm nay. Tôi chọn cách trình bày bài thu hoạch theo hướng: hiểu Đảng để hiểu mình đang đứng ở đâu, rồi từ đó xác định việc phải làm.
 
 **I. Nhận thức về Đảng Cộng sản Việt Nam**
 
