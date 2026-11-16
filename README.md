@@ -12,7 +12,7 @@ Tài liệu tự học cá nhân, biên soạn cho lớp bồi dưỡng nhận t
 - **Phần F** — Đề cương và bài thu hoạch mẫu
 - **Phần G** — Dự đoán đề tổng kết và lộ trình 5 ngày
 - **Phần H** — Checklist trước, trong, sau lớp
-- **Phần I** — Lịch sử, nhân vật và bối cảnh thế giới
+- **Phần I** — Lịch sử, nhân vật, bối cảnh thế giới và thời sự tháng 11/2026 (cập nhật 16/11)
 - **P1–P3** — 30 dữ kiện, văn bản gốc, tờ ôn nhanh 1 trang
 
 ## Bản web
