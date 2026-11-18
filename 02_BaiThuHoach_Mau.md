@@ -1,11 +1,11 @@
 # Bài thu hoạch mẫu — Lớp bồi dưỡng nhận thức về Đảng
 
-> Học viên: Nguyễn Tuấn Minh — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai  
+> Học viên: Vũ Minh Đức — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai  
 > Bản mẫu để đối chiếu cách viết. Khi làm bài thật phải thay bằng chi tiết của chính mình.
 
 **BÀI THU HOẠCH**
 
-    Học viên: Nguyễn Tuấn Minh — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai
+    Học viên: Vũ Minh Đức — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai
 
 **Mở bài.** Trong năm ngày học tập chương trình bồi dưỡng nhận thức về Đảng, điều tôi mang về không phải một danh sách ngày tháng để học thuộc, mà là một cách nhìn lại công việc mình đã làm mười năm nay. Tôi chọn cách trình bày bài thu hoạch theo hướng: hiểu Đảng để hiểu mình đang đứng ở đâu, rồi từ đó xác định việc phải làm.
 

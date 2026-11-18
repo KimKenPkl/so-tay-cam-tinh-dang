@@ -33,7 +33,7 @@ print('paragraphs:', len(paras))
 # ---------- Markdown ----------
 md = []
 md.append('# Bài thu hoạch mẫu — Lớp bồi dưỡng nhận thức về Đảng\n')
-md.append('> Học viên: Nguyễn Tuấn Minh — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai  ')
+md.append('> Học viên: Vũ Minh Đức — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai  ')
 md.append('> Bản mẫu để đối chiếu cách viết. Khi làm bài thật phải thay bằng chi tiết của chính mình.\n')
 for p in paras:
     md.append(p + '\n')
@@ -56,14 +56,19 @@ normal.paragraph_format.line_spacing = 1.5
 normal.paragraph_format.space_after = Pt(6)
 
 def add_runs(par, text, base_bold=False, size=None):
-    parts = text.split('**')
-    for i, part in enumerate(parts):
-        if part == '':
+    tokens = re.split(r'(\*\*[^*]+\*\*|\*[^*]+\*)', text)
+    for tok in tokens:
+        if not tok:
             continue
-        lines = part.split('\n')
+        lines = tok.split('\n')
         for j, line in enumerate(lines):
-            run = par.add_run(line)
-            run.bold = base_bold or (i % 2 == 1)
+            if line.startswith('**') and line.endswith('**'):
+                run = par.add_run(line[2:-2]); run.bold = True
+            elif line.startswith('*') and line.endswith('*'):
+                run = par.add_run(line[1:-1]); run.italic = True
+            else:
+                run = par.add_run(line)
+                run.bold = base_bold
             if size:
                 run.font.size = size
             if j < len(lines) - 1:
@@ -73,7 +78,7 @@ def add_runs(par, text, base_bold=False, size=None):
 first = paras[0].split('\n')
 p = doc.add_paragraph()
 p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-r = p.add_run(first[0].strip())
+r = p.add_run(first[0].strip().replace('**', '').replace('*', ''))
 r.bold = True
 r.font.size = Pt(15)
 

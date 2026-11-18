@@ -1,6 +1,6 @@
 # BÀI LUẬN CUỐI KHÓA — LỚP BỒI DƯỠNG NHẬN THỨC VỀ ĐẢNG
 
-Học viên: Nguyễn Tuấn Minh — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai
+Học viên: Vũ Minh Đức — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai
 
 ## Mở bài
 
