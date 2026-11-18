@@ -14,6 +14,8 @@ Tài liệu tự học cá nhân, biên soạn cho lớp bồi dưỡng nhận t
 - **Phần H** — Checklist trước, trong, sau lớp
 - **Phần I** — Lịch sử, nhân vật, bối cảnh thế giới và thời sự tháng 11/2026 (cập nhật 16/11)
 - **P1–P3** — 30 dữ kiện, văn bản gốc, tờ ôn nhanh 1 trang
+- **K** — Bài luận cuối khóa hoàn chỉnh (3 câu hỏi, theo đúng gợi ý của giảng viên)
+- **L** — Hệ thống hóa kiến thức 5 bài theo nội dung Ban Tuyên giáo (61-HD/BTGTW, XB lần 24, cập nhật Đại hội XIV)
 
 ## Bản web
 
