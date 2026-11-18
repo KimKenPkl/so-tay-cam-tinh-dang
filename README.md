@@ -7,7 +7,6 @@ Tài liệu tự học cá nhân, biên soạn cho lớp bồi dưỡng nhận t
 - **Phần A** — Bản đồ khóa học và khung thời lượng
 - **C1–C5** — Năm chuyên đề trọng tâm
 - **Phần D** — Gia Lai: lịch sử Đảng bộ, mục tiêu 2025–2030, liên hệ dạy học
-- **Phần E** — 40 câu trắc nghiệm tổng hợp và đáp án
 - **Phần F** — Đề cương và bài thu hoạch mẫu
 - **Phần G** — Dự đoán đề tổng kết khóa (7 đề) và bảng tự chấm
 - **Phần H** — Checklist trước, trong, sau lớp
@@ -15,6 +14,8 @@ Tài liệu tự học cá nhân, biên soạn cho lớp bồi dưỡng nhận t
 - **P1–P3** — 30 dữ kiện, văn bản gốc, tờ ôn nhanh 1 trang
 - **K** — Bài luận cuối khóa hoàn chỉnh (3 câu hỏi, theo đúng gợi ý của giảng viên)
 - **L** — Hệ thống hóa kiến thức 5 bài theo nội dung Ban Tuyên giáo (61-HD/BTGTW, XB lần 24, cập nhật Đại hội XIV)
+- **M** — Đáp án chi tiết 25 câu hỏi ôn tập của 5 chuyên đề
+- **N** — 13 câu hỏi suy luận từ giáo trình (đề mở, tự luận)
 
 ## Bản web
 
@@ -33,3 +34,5 @@ Tài liệu tự biên soạn, **không thay thế** tài liệu chính thức c
 - `03_BaiLuan_CuoiKhoa.html` — **bài luận cuối khóa, file riêng để ôn tập** (in được A4)
 - `03_BaiLuan_CuoiKhoa.docx` — bài luận cuối khóa (bản Word)
 - `04_HoTat_KienThuc_5Bai.docx` — hệ thống kiến thức 5 bài (bản Word)
+- `05_DapAn_25CauOnTap.docx` — đáp án chi tiết 25 câu hỏi ôn tập (bản Word)
+- `06_CauHoiSuyLuan_GiaoTrinh.docx` — 13 câu suy luận từ giáo trình, đề mở (bản Word)
