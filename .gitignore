@@ -1,0 +1,5 @@
+# Private coursework is local only.
+/07_ThuHoach_DeChinhThuc_150p/
+/__pycache__/
+*.pyc
+/.qa-local/

@@ -1,6 +1,6 @@
 # CÂU HỎI SUY LUẬN TỪ GIÁO TRÌNH — ĐỀ MỞ, TỰ LUẬN
 
-Học viên: Vũ Minh Đức — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai
+Học viên — Bản tham khảo
 
 Bộ này dành riêng cho hình thức **đề mở, tự luận hoàn toàn** (không có trắc nghiệm). Khác với các câu hỏi ôn tập ở Phần M chỉ yêu cầu nhớ và giải thích lại giáo trình, các câu dưới đây yêu cầu **suy luận**: lấy một nội dung của giáo trình làm điểm tựa, rồi vận dụng vào một tình huống mới mà giáo trình không nêu trực tiếp. Khi làm bài, thí sinh được phép mở tài liệu — vì thế điều được chấm không phải là "nhớ hay không", mà là **có dùng đúng văn bản làm căn cứ hay không** và **có suy luận được đến một kết luận có trách nhiệm hay không**. Với mỗi câu, tôi nêu rõ "điểm tựa giáo trình" và "hướng suy luận" để người chấm thấy ngay nguồn gốc của câu trả lời.
 

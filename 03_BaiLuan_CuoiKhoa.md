@@ -1,6 +1,6 @@
 # BÀI LUẬN CUỐI KHÓA — LỚP BỒI DƯỠNG NHẬN THỨC VỀ ĐẢNG
 
-Học viên: Vũ Minh Đức — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai
+Học viên — Bản tham khảo
 
 ## Mở bài
 
@@ -121,11 +121,11 @@ Sau Đại hội XIV, nhiều văn bản mới được ban hành mà người h
 
 ### 4. Cảm nhận và liên hệ bản thân — một quần chúng ưu tú là giáo viên
 
-Tôi đọc lại những thắng lợi ấy bằng cảm xúc của một người đã đứng lớp hơn mười năm. Điều làm tôi xúc động nhất không phải là quy mô chiến thắng, mà là **chỗ bắt đầu của nó**: tháng 3/1930, một chi bộ cộng sản với năm đảng viên đã ra đời tại Nhà máy Đèn Quy Nhơn (Bí thư là đồng chí Lê Xuân Trữ) — chỉ một tháng sau Hội nghị 3/2/1930; đến 1/10/1945 có Chi bộ Pleiku với chín đồng chí; rồi 10/12/1945 có Đảng bộ tỉnh Gia Lai (phạm vi trước hợp nhất). Từ năm người, chín người đến cả một tỉnh — đó chính là sức lan tỏa của một đường lối đúng. Tôi cẩn trọng ghi chú: mốc chính thức của Đảng bộ tỉnh sau hợp nhất hiện vẫn đang được hoàn thiện, nên tôi chỉ viết ở mức đã được công bố, không khẳng định thay cơ quan có thẩm quyền. Đó cũng là cách tôi dạy học sinh: không chắc thì nói là không chắc, còn hơn là nói sai mà nghe có vẻ chắc.
+Tôi đọc lại những thắng lợi ấy bằng cảm xúc của một người đã đứng lớp nhiều năm. Điều làm tôi xúc động nhất không phải là quy mô chiến thắng, mà là **chỗ bắt đầu của nó**: tháng 3/1930, một chi bộ cộng sản với năm đảng viên đã ra đời tại Nhà máy Đèn Quy Nhơn (Bí thư là đồng chí Lê Xuân Trữ) — chỉ một tháng sau Hội nghị 3/2/1930; đến 1/10/1945 có Chi bộ Pleiku với chín đồng chí; rồi 10/12/1945 có Đảng bộ tỉnh Gia Lai (phạm vi trước hợp nhất). Từ năm người, chín người đến cả một tỉnh — đó chính là sức lan tỏa của một đường lối đúng. Tôi cẩn trọng ghi chú: mốc chính thức của Đảng bộ tỉnh sau hợp nhất hiện vẫn đang được hoàn thiện, nên tôi chỉ viết ở mức đã được công bố, không khẳng định thay cơ quan có thẩm quyền. Đó cũng là cách tôi dạy học sinh: không chắc thì nói là không chắc, còn hơn là nói sai mà nghe có vẻ chắc.
 
 Là quần chúng ưu tú, tôi nhận ra mình không đứng ngoài những thắng lợi ấy. Đột phá **nguồn nhân lực** trong ba đột phá chiến lược của Đại hội XIV chính là việc của người giáo viên — không phải của ai khác. Tôi không cầm súng như thế hệ đi trước, nhưng tôi cầm phấn. Khi dạy học sinh tính lượng N–P–K cho một hecta cà phê, phân tích vì sao bón thừa phân bón gây ô nhiễm đất và nguồn nước, giải thích vì sao màng oxit nhôm bảo vệ được nhôm, hay hướng dẫn em người Ba Na đọc tên hóa chất bằng cả tiếng mẹ đẻ lẫn tiếng Việt, tôi đang biến một mục tiêu quốc gia thành một tiết học cụ thể cho học sinh ở vùng nguyên liệu cà phê, hồ tiêu Gia Lai. Thắng lợi lịch sử đã tạo ra nền hòa bình để tôi đứng lớp; trách nhiệm của tôi là đào tạo được người kế tiếp biết giữ và biết phát triển nền hòa bình ấy.
 
-Tôi cũng phải nói thật về mình. Tôi có lúc ngại va chạm trong sinh hoạt chi bộ; có lúc dùng điện thoại lúc học sinh làm bài; tôi dạy tốt trong lớp nhưng ít đến nhà học sinh khó khăn. Những cái "có lúc" ấy là chủ nghĩa cá nhân ở quy mô rất nhỏ, dễ bào chữa, và chính vì dễ bào chữa nên khó sửa. Nhưng bài học lớn nhất của phần II — Đảng dám nhìn thẳng vào sự thật để tự sửa — dạy tôi rằng sửa không cần chờ đến một đại hội. Sửa bắt đầu từ kỳ sinh hoạt chi bộ tới, bằng một ý kiến góp ý thẳng thắn, bằng một lần đến nhà em học sinh, bằng lần bỏ điện thoại vào túi trước khi lên lớp.
+Tôi cũng phải nói thật về mình. Tôi có lúc ngại va chạm trong sinh hoạt chuyên môn; có lúc dùng điện thoại lúc học sinh làm bài; tôi dạy tốt trong lớp nhưng ít đến nhà học sinh khó khăn. Những cái "có lúc" ấy là chủ nghĩa cá nhân ở quy mô rất nhỏ, dễ bào chữa, và chính vì dễ bào chữa nên khó sửa. Nhưng bài học lớn nhất của phần II — Đảng dám nhìn thẳng vào sự thật để tự sửa — dạy tôi rằng sửa không cần chờ đến một đại hội. Sửa bắt đầu từ kỳ sinh hoạt chuyên môn tới, bằng một ý kiến góp ý thẳng thắn, bằng một lần đến nhà em học sinh, bằng lần bỏ điện thoại vào túi trước khi lên lớp.
 
 ## III. HỌC TẬP, NGHIÊN CỨU CƯƠNG LĨNH CHÍNH TRỊ CỦA ĐẢNG — Ý NGHĨA ĐỐI VỚI QUẦN CHÚNG ƯU TÚ VÀ NHẬN THỨC VỀ XÃ HỘI ĐANG XÂY DỰNG
 
@@ -143,7 +143,7 @@ Thưa giảng viên, phần này tôi chưa kịp nghe trên lớp, nên tôi t�
 
 **Thứ tư, Cương lĩnh là cầu nối từ quần chúng ưu tú đến đảng viên.** Hiểu → tin → làm → mới đủ tư cách "thừa nhận và tự nguyện thực hiện". Đây là việc phải làm từ trước khi viết đơn, chứ không phải sau khi được kết nạp. Nhiều người viết đơn trước rồi mới học — thứ tự ấy dễ dẫn đến động cơ lệch mà chính mình cũng không nhận ra.
 
-**Thứ năm, học Cương lĩnh giúp tôi giữ được sự tỉnh táo trước thông tin trái chiều.** Giai đoạn sau Đại hội XIV có nhiều văn bản mới, cũng có nhiều tài liệu cũ và nhiều diễn giải trên mạng. Nếu không nắm văn bản gốc, tôi dễ tin vào một con số được đưa ra thiếu ngữ cảnh. Với một giáo viên, sự tỉnh táo ấy đặc biệt quan trọng, vì học sinh hỏi lại ngay sau khi đọc một bài trên điện thoại. Thầy không thể trả lời "chờ thầy tra Google" mãi được.
+**Thứ năm, học Cương lĩnh giúp tôi giữ được sự tỉnh táo trước thông tin trái chiều.** Giai đoạn sau Đại hội XIV có nhiều văn bản mới, cũng có nhiều tài liệu cũ và nhiều diễn giải trên mạng. Nếu không nắm văn bản gốc, tôi dễ tin vào một con số được đưa ra thiếu ngữ cảnh. Với một giáo viên, sự tỉnh táo ấy đặc biệt quan trọng, vì học sinh hỏi lại ngay sau khi đọc một bài trên điện thoại. Người dạy không thể trả lời bằng một lần tra cứu vội vàng.
 
 ### 3. Nhận thức về xã hội mà nhân dân ta đang xây dựng
 
@@ -168,7 +168,7 @@ Nhận thức của tôi sau khi học: đây không phải một xã hội **đ
 
 Ba câu hỏi cuối khóa, với tôi, quy về một câu: **mình sẽ làm gì tiếp theo?** Tôi xác định năm việc, đều có thời hạn, có địa chỉ và cách đo, và mong được chi bộ, đồng nghiệp cùng học sinh giám sát.
 
-1. **Trong ba tháng tới**, mỗi kỳ sinh hoạt chi bộ tôi phát biểu ít nhất một ý góp ý thẳng thắn, ghi chép vào sổ để tự kiểm tra. Việc này sửa trực tiếp khuyết điểm ngại va chạm, coi trọng sự dễ chịu hơn sự thẳng thắn của tôi. Đo bằng số lần phát biểu ghi trong sổ.
+1. **Trong ba tháng tới**, mỗi kỳ sinh hoạt chuyên môn tôi phát biểu ít nhất một ý góp ý thẳng thắn, ghi chép vào sổ để tự kiểm tra. Việc này sửa trực tiếp khuyết điểm ngại va chạm, coi trọng sự dễ chịu hơn sự thẳng thắn của tôi. Đo bằng số lần phát biểu ghi trong sổ.
 
 2. **Trong năm học 2026–2027**, xây dựng một chuyên đề dạy học tích hợp "Phân bón và canh tác bền vững ở Gia Lai" trong môn Hóa học, có phiếu học tập và sản phẩm của học sinh, báo cáo trước tổ chuyên môn. Đây là cách tôi góp phần vào đột phá nguồn nhân lực. Đo bằng số lượng phiếu học tập và sản phẩm học sinh được lưu lại.
 

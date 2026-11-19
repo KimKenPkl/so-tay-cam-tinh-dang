@@ -1,6 +1,6 @@
 # ĐÁP ÁN CHI TIẾT 25 CÂU HỎI ÔN TẬP — 5 CHUYÊN ĐỀ
 
-Học viên: Vũ Minh Đức — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai
+Học viên — Bản tham khảo
 
 Bản này viết đầy đủ đáp án cho 25 câu hỏi ôn tập cuối mỗi chuyên đề. Cách trả lời đi theo ba lớp **mốc — logic — liên hệ**: nêu đúng mốc và con số, giải thích vì sao, rồi kéo về nghề giáo và địa bàn Gia Lai. Khi trích số liệu, ghi rõ nguồn: *Tài liệu bồi dưỡng nhận thức về Đảng* (xb lần thứ 24), Cương lĩnh 2011, Điều lệ Đảng, hoặc Văn kiện Đại hội XIV (tháng 1/2026).
 

@@ -1,13 +1,13 @@
 # Bài thu hoạch mẫu — Lớp bồi dưỡng nhận thức về Đảng
 
-> Học viên: Vũ Minh Đức — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai  
+> Học viên — Bản tham khảo  
 > Bản mẫu để đối chiếu cách viết. Khi làm bài thật phải thay bằng chi tiết của chính mình.
 
 **BÀI THU HOẠCH**
 
-    Học viên: Vũ Minh Đức — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai
+    Học viên — Bản tham khảo
 
-**Mở bài.** Trong năm ngày học tập chương trình bồi dưỡng nhận thức về Đảng, điều tôi mang về không phải một danh sách ngày tháng để học thuộc, mà là một cách nhìn lại công việc mình đã làm mười năm nay. Tôi chọn cách trình bày bài thu hoạch theo hướng: hiểu Đảng để hiểu mình đang đứng ở đâu, rồi từ đó xác định việc phải làm.
+**Mở bài.** Trong năm ngày học tập chương trình bồi dưỡng nhận thức về Đảng, điều tôi mang về không phải một danh sách ngày tháng để học thuộc, mà là một cách nhìn lại công việc mình đã làm trong những năm qua. Tôi chọn cách trình bày bài thu hoạch theo hướng: hiểu Đảng để hiểu mình đang đứng ở đâu, rồi từ đó xác định việc phải làm.
 
 **I. Nhận thức về Đảng Cộng sản Việt Nam**
 
@@ -33,7 +33,7 @@ Về phong cách, tôi ấn tượng nhất với **phong cách làm việc khoa
 
 **Ưu điểm:** tôi dạy đúng chương trình, không bỏ tiết; chịu khó học hỏi, tự làm thiết bị dạy học; quan hệ với đồng nghiệp hòa nhã, không nói xấu sau lưng.
 
-**Khuyết điểm — và đây là phần tôi phải nói thật:** Thứ nhất, tôi còn ngại va chạm. Trong sinh hoạt chi bộ, khi thấy một việc chưa đúng, tôi thường im lặng hoặc góp ý rất nhẹ, vì sợ mất lòng. Điều này trái với yêu cầu tự phê bình và phê bình. Nguyên nhân là tôi coi trọng sự dễ chịu hơn là sự thẳng thắn. Thứ hai, tôi chưa thật sự “gắn bó với nhân dân” theo nghĩa làm công tác quần chúng: tôi dạy tốt trong lớp nhưng ít tham gia các hoạt động của địa phương, ít đến thăm gia đình học sinh khó khăn. Thứ ba, tôi có lúc dùng điện thoại trong giờ họp hoặc trong lúc học sinh làm bài — một biểu hiện nhỏ nhưng không gương mẫu.
+**Khuyết điểm — và đây là phần tôi phải nói thật:** Thứ nhất, tôi còn ngại va chạm. Trong sinh hoạt chuyên môn, khi thấy một việc chưa đúng, tôi thường im lặng hoặc góp ý rất nhẹ, vì sợ mất lòng. Điều này trái với yêu cầu tự phê bình và phê bình. Nguyên nhân là tôi coi trọng sự dễ chịu hơn là sự thẳng thắn. Thứ hai, tôi chưa thật sự “gắn bó với nhân dân” theo nghĩa làm công tác quần chúng: tôi dạy tốt trong lớp nhưng ít tham gia các hoạt động của địa phương, ít đến thăm gia đình học sinh khó khăn. Thứ ba, tôi có lúc dùng điện thoại trong giờ họp hoặc trong lúc học sinh làm bài — một biểu hiện nhỏ nhưng không gương mẫu.
 
 Tôi nhận ra điểm chung của ba khuyết điểm này: đều là những việc nhỏ, dễ bào chữa, và đều liên quan đến việc đặt sự thoải mái của mình lên trước. Đó chính là biểu hiện của chủ nghĩa cá nhân mà bài 4 đã nêu.
 
@@ -41,7 +41,7 @@ Tôi nhận ra điểm chung của ba khuyết điểm này: đều là những 
 
 Tôi xác định bốn việc, có thời hạn và cách đo:
 
-**1.** Trong 3 tháng tới, mỗi kỳ sinh hoạt chi bộ tôi phát biểu ít nhất một ý kiến góp ý thẳng thắn, có ghi chép lại để tự kiểm tra. Đo bằng sổ ghi chép sinh hoạt chi bộ.
+**1.** Trong 3 tháng tới, mỗi kỳ sinh hoạt chuyên môn tôi phát biểu ít nhất một ý kiến góp ý thẳng thắn, có ghi chép lại để tự kiểm tra. Đo bằng sổ ghi chép sinh hoạt chuyên môn.
 
 **2.** Trong năm học 2026–2027, xây dựng 01 chuyên đề dạy học tích hợp giáo dục địa phương gắn với Hóa học (phân bón và canh tác bền vững ở Gia Lai), có phiếu học tập và sản phẩm học sinh; báo cáo trước tổ chuyên môn.
 

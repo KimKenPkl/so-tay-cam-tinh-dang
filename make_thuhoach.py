@@ -33,7 +33,7 @@ print('paragraphs:', len(paras))
 # ---------- Markdown ----------
 md = []
 md.append('# Bài thu hoạch mẫu — Lớp bồi dưỡng nhận thức về Đảng\n')
-md.append('> Học viên: Vũ Minh Đức — Giáo viên Hóa học, Trường THPT Chi Lăng, tỉnh Gia Lai  ')
+md.append('> Học viên — Bản tham khảo  ')
 md.append('> Bản mẫu để đối chiếu cách viết. Khi làm bài thật phải thay bằng chi tiết của chính mình.\n')
 for p in paras:
     md.append(p + '\n')
